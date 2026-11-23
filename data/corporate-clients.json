@@ -25,7 +25,7 @@
   "code": "8105",
   "name_en": "Bitcoin Japan",
   "name_ja": "Bitcoin Japan",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/8105.png",
   "logo_display_px": {
    "w": 84,
@@ -156,7 +156,7 @@
   "code": "3002",
   "name_en": "Gunze",
   "name_ja": "グンゼ",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/3002.png",
   "logo_display_px": {
    "w": 190,
@@ -167,7 +167,7 @@
   "code": "4475",
   "name_en": "HENNGE",
   "name_ja": "HENNGE",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/4475.png",
   "logo_display_px": {
    "w": 190,
@@ -298,7 +298,7 @@
   "code": "3825",
   "name_en": "Remixpoint",
   "name_ja": "リミックスポイント",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/3825.png",
   "logo_display_px": {
    "w": 205,
@@ -329,7 +329,7 @@
   "code": "2676",
   "name_en": "Takachiho Koheki",
   "name_ja": "高千穂交易",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/2676.png",
   "logo_display_px": {
    "w": 205,
