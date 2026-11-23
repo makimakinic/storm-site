@@ -117,7 +117,7 @@ const { lang } = Astro.props;
       <div class="latest">
         <div class="code">4318</div>
         <div><h3><span class="en">Read a sponsored report: QUICK Co., Ltd.</span><span class="ja">スポンサードレポートの実例：株式会社クイック</span></h3><p><span class="en">Initiating coverage, 21 October 2026. Published online, as a PDF and on Bloomberg.</span><span class="ja">イニシエーションレポート（2026年10月21日）。ウェブ版・PDF・Bloombergで配信しています。</span></p></div>
-        <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-accent" href={SITE.reportsSite + "/companies/4318/reports/2026-10-21-initiation/"}><span class="en">Read the report</span><span class="ja">レポートを読む</span></a><a class="btn" style="border-color:var(--wine);color:var(--wine)" href="/coverage/#coverage-corporate"><span class="en">All sponsored research</span><span class="ja">スポンサードレポート一覧</span></a></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-accent" href={SITE.reportsSite + "/companies/4318/#2026-10-21-initiation"} target="_blank" rel="noopener"><span class="en">Read the report</span><span class="ja">レポートを読む</span></a><a class="btn" style="border-color:var(--wine);color:var(--wine)" href="/coverage/#coverage-corporate"><span class="en">All sponsored research</span><span class="ja">スポンサードレポート一覧</span></a></div>
       </div>
     </div>
   </section>
@@ -215,7 +215,7 @@ const { lang } = Astro.props;
         <p class="lead"><span class="en">Tell us about your IR goals. We will suggest where to start, whether that's a sponsored report, investor meetings or a roadshow.</span><span class="ja">海外IRの目標や課題をお聞かせください。スポンサードレポート、海外機関投資家とのミーティング、ロードショーなど、最適な始め方をご提案します。</span></p>
         <p><span class="en">Our Japanese-speaking team will respond in Japanese.</span><span class="ja">日本語でご対応いたします。</span></p>
         <button type="button" class="repthumb" data-zoom aria-label="Enlarge the example sponsored report"><img src="/assets/report.jpg" alt="Example Storm Corporate sponsored report"><span class="zoomhint"><span class="en">Click to enlarge</span><span class="ja">クリックで拡大</span></span></button>
-        <p class="note" style="margin-top:12px"><span class="en">Example sponsored report.</span><span class="ja">スポンサードレポートの例です。</span> <a href={SITE.reportsSite + "/companies/4318/reports/2026-10-21-initiation/"} style="color:var(--wine);font-weight:700"><span class="en">Read a full report online</span><span class="ja">ウェブ版のレポートを読む</span></a></p>
+        <p class="note" style="margin-top:12px"><span class="en">Example sponsored report.</span><span class="ja">スポンサードレポートの例です。</span> <a href={SITE.reportsSite + "/companies/4318/#2026-10-21-initiation"} target="_blank" rel="noopener" style="color:var(--wine);font-weight:700"><span class="en">Read a full report online</span><span class="ja">ウェブ版のレポートを読む</span></a></p>
       </div>
       <HubSpotForm name="corporate">
       <form data-form>

@@ -48,7 +48,7 @@ const logos = (c: Client) => {
   );
   return (
     <li>{c.report_page
-      ? <a class="cc" href={`${SITE.reportsSite}/companies/${c.code}/`}>{inner}</a>
+      ? <a class="cc" href={`${SITE.reportsSite}/companies/${c.code}/`} target="_blank" rel="noopener">{inner}</a>
       : <div class="cc cc-soon">{inner}</div>}</li>
   );
 })}</ul>
