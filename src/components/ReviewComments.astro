@@ -24,7 +24,7 @@
           pick: 'コメントしたい場所をクリックしてください（Escでやめる）',
           placeholder: 'ここをこう変えてほしい、など', setupTitle: 'コメント機能を使う',
           name: 'お名前', start: 'はじめる', none: 'まだコメントはありません',
-          thisPage: 'このページ', other: 'ほかのページ', confirmResolve: 'このコメントを「解決」にして消しますか？',
+          thisPage: 'このページ', other: 'ほかのページ', confirmResolve: 'このコメントを「解決」にして消しますか？', del: '削除', confirmDelete: 'このコメントを削除しますか？（元に戻せません）',
           notReady: 'コメント機能の設定がまだ終わっていません',
           failed: 'うまくいきませんでした。時間をおいてもう一度お試しください', sending: '送信中…',
           screen: '画面幅', change: '名前を変える', missingPin: '（場所が見つかりません）',
@@ -34,7 +34,7 @@
           pick: 'Click where you want to comment (Esc to cancel)',
           placeholder: 'What should change here?', setupTitle: 'Leave review comments',
           name: 'Your name', start: 'Start', none: 'No comments yet',
-          thisPage: 'This page', other: 'Other pages', confirmResolve: 'Mark this comment as resolved and hide it?',
+          thisPage: 'This page', other: 'Other pages', confirmResolve: 'Mark this comment as resolved and hide it?', del: 'Delete', confirmDelete: 'Delete this comment? This cannot be undone.',
           notReady: 'Comments are not set up yet',
           failed: 'Something went wrong. Please try again later.', sending: 'Posting…',
           screen: 'width', change: 'Change name', missingPin: '(location not found)',
@@ -46,6 +46,9 @@
       set(k: string, v: string) { try { localStorage.setItem('rv-' + k, v); } catch {} },
     };
     let name = store.get('name');
+    // このブラウザから送ったコメントの番号（自分のコメントだけ削除できる）
+    const myIds = new Set<number>((() => { try { return JSON.parse(store.get('mine') || '[]'); } catch { return []; } })());
+    const saveMine = () => store.set('mine', JSON.stringify([...myIds]));
 
     // ---- 画面の部品（Shadow DOM でサイトのCSSと切り離す） ----
     const root = host.attachShadow({ mode: 'open' });
@@ -189,7 +192,21 @@
       const err = el('p', 'err'); err.hidden = true; card.append(err);
       const row = el('div', 'row');
       const close = el('button', 'ghost', T.close); const res = el('button', 'warn', '✓ ' + T.resolve);
-      row.append(close, res); card.append(row);
+      row.append(close);
+      if (myIds.has(c.id)) {
+        const del = el('button', 'sub', T.del);
+        row.append(del);
+        del.onclick = async () => {
+          if (!confirm(T.confirmDelete)) return;
+          del.disabled = true;
+          try {
+            await api('POST', { action: 'delete', id: c.id, name });
+            myIds.delete(c.id); saveMine();
+            comments = comments.filter((x) => x.id !== c.id); closeCard(); draw();
+          } catch (e) { err.textContent = errText(e); err.hidden = false; del.disabled = false; }
+        };
+      }
+      row.append(res); card.append(row);
       close.onclick = closeCard;
       res.onclick = async () => {
         if (!confirm(T.confirmResolve)) return;
@@ -321,7 +338,7 @@
           const d = await api('POST', {
             name, text, page: here, lang: ja ? 'ja' : 'en', width: innerWidth, snippet, anchor,
           });
-          comments.push(d.comment); cleanup(); closeCard(); draw();
+          comments.push(d.comment); myIds.add(d.comment.id); saveMine(); cleanup(); closeCard(); draw();
         } catch (e) {
           err.textContent = errText(e); err.hidden = false; send.disabled = false; send.textContent = T.send;
         }

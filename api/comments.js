@@ -99,6 +99,26 @@ export default async function handler(req, res) {
     if (req.method === 'POST') {
       const b = await readBody(req);
 
+      if (b.action === 'delete') {
+        // 削除：本文を消して閉じる（GitHub の仕組み上、Issue そのものは消せない）
+        const id = Number(b.id);
+        if (!Number.isInteger(id) || id < 1) return send(res, 400, { error: 'bad-id' });
+        const g = await gh(`/issues/${id}`);
+        if (!g.ok || !parseIssue(await g.json())) return send(res, 404, { error: 'not-found' });
+        const by = str(b.name, 60);
+        const r = await gh(`/issues/${id}`, {
+          method: 'PATCH',
+          body: JSON.stringify({
+            title: '💬 （削除されたコメント）',
+            body: `このコメントは${by ? ` ${by} さんが` : ''}削除しました。`,
+            state: 'closed',
+            state_reason: 'not_planned',
+          }),
+        });
+        if (!r.ok) return send(res, 502, { error: 'github', status: r.status });
+        return send(res, 200, { ok: true });
+      }
+
       if (b.action === 'resolve') {
         const id = Number(b.id);
         if (!Number.isInteger(id) || id < 1) return send(res, 400, { error: 'bad-id' });
