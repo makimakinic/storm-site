@@ -3,9 +3,8 @@
 //
 // Vercel の「Settings → Environment Variables」に設定するもの：
 //   REVIEW_GITHUB_TOKEN  GitHub の鍵（storm-site の Issues だけ読み書きできるもの）
-//   REVIEW_PASSWORD      チームの合言葉
 //   REVIEW_REPO          省略可。既定は makimakinic/storm-site
-// 本番公開（DNS切り替え）のときは、この2つを Vercel から削除する。
+// 本番公開（DNS切り替え）のときは、これを Vercel から削除する。
 
 const MARK = 'review-meta';
 const MAX_TEXT = 3000;
@@ -57,12 +56,15 @@ function parseIssue(issue) {
 
 export default async function handler(req, res) {
   const token = process.env.REVIEW_GITHUB_TOKEN;
-  const password = process.env.REVIEW_PASSWORD;
   const repo = process.env.REVIEW_REPO || 'makimakinic/storm-site';
   const apiBase = process.env.REVIEW_GITHUB_API || 'https://api.github.com';
-  if (!token || !password) return send(res, 503, { error: 'not-configured' });
+  if (!token) return send(res, 503, { error: 'not-configured' });
 
-  if (req.headers['x-review-key'] !== password) return send(res, 401, { error: 'bad-password' });
+  // 合言葉なし。ほかのサイトから書き込まれないよう、送信元がこのサイトかだけ確かめる
+  if (req.method === 'POST') {
+    const origin = req.headers.origin;
+    if (!origin || new URL(origin).host !== req.headers.host) return send(res, 403, { error: 'origin' });
+  }
 
   const gh = (path, init = {}) =>
     fetch(`${apiBase}/repos/${repo}${path}`, {

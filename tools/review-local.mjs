@@ -1,7 +1,7 @@
 // コメント機能を手元で試すためのサーバー。
 // dist/ を表示し、/api/comments は api/comments.js を動かす。
 // GitHub の代わりに、このPCのメモリ上の仮の保存先を使う（止めると消える）。
-// 使い方: npm run build のあと node tools/review-local.mjs → http://localhost:4400 、合言葉は test
+// 使い方: npm run build のあと node tools/review-local.mjs → http://localhost:4400
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -41,7 +41,6 @@ const mock = http.createServer(async (req, res) => {
 mock.listen(MOCK);
 
 process.env.REVIEW_GITHUB_TOKEN = 'local';
-process.env.REVIEW_PASSWORD = process.env.REVIEW_PASSWORD || 'test';
 process.env.REVIEW_GITHUB_API = `http://localhost:${MOCK}`;
 const { default: handler } = await import('../api/comments.js');
 
@@ -55,4 +54,4 @@ http.createServer((req, res) => {
   if (!fs.existsSync(f)) { res.writeHead(404, { 'Content-Type': 'text/html' }); const nf = path.join(dist, '404.html'); return res.end(fs.existsSync(nf) ? fs.readFileSync(nf) : 'Not found'); }
   res.writeHead(200, { 'Content-Type': types[path.extname(f)] || 'application/octet-stream' });
   fs.createReadStream(f).pipe(res);
-}).listen(PORT, () => console.log(`http://localhost:${PORT} （合言葉: ${process.env.REVIEW_PASSWORD}）`));
+}).listen(PORT, () => console.log(`http://localhost:${PORT}`));

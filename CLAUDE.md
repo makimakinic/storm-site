@@ -7,7 +7,7 @@ claude.ai で作った試作（`prototype/index.html`）を、Astro の静的サ
 1. 公開の土台：Astro化（試作と同じ見た目）＋ GitHub（makimakinic/storm-site）＋ Vercel のプレビューURL https://storm-site-one.vercel.app/ （noindex）← 完了
 2. プレビューURLを見ながらデザインを編集する ← 今ここ
 3. 切り替えの準備：旧URL→新URLの301リダイレクト表、HubSpotのフォームとトラッキングコード、規約などの本文、電話番号の確定、FCAの文言チェック
-4. DNS切り替え：サイト用のA／CNAMEレコードだけを Vercel に向ける。MX と HubSpot のメール用レコード（DKIM・SPF）には触らない。事前にTTLを短くし、旧レコードの値を控えておく。Vercel の REVIEW_GITHUB_TOKEN と REVIEW_PASSWORD（コメント機能）を削除する。HubSpot上に同じドメインのランディングページ・ブログ・ファイルが無いか事前に確認する
+4. DNS切り替え：サイト用のA／CNAMEレコードだけを Vercel に向ける。MX と HubSpot のメール用レコード（DKIM・SPF）には触らない。事前にTTLを短くし、旧レコードの値を控えておく。Vercel の REVIEW_GITHUB_TOKEN（コメント機能）を削除する。HubSpot上に同じドメインのランディングページ・ブログ・ファイルが無いか事前に確認する
 
 - **トップのURL https://stormresearch.co.uk/ は変えない**（多くの外部サイトにリンクが載っているため）
 

@@ -41,11 +41,11 @@ Astro で作った静的サイトです。GitHub に保存すると Vercel が�
 
 プレビューサイトの右下に「コメント」ボタンが出ます。チームの方がページ上の場所を選んでコメントを残せます。
 
-- 使い方：「コメント」→ 名前と合言葉（初回だけ）→ コメントしたい場所をクリック → 書いて「送信」。「一覧」で全ページのコメントを見られ、対応が済んだら「解決」
+- 使い方：「コメント」→ 名前（初回だけ）→ コメントしたい場所をクリック → 書いて「送信」。「一覧」で全ページのコメントを見られ、対応が済んだら「解決」
 - 保存先：GitHub の `storm-site` の Issues（`api/comments.js` が保存・読み出しをする）
-- Vercel の Environment Variables に `REVIEW_GITHUB_TOKEN`（Issuesだけ読み書きできるGitHubの鍵）と `REVIEW_PASSWORD`（合言葉）が必要
-- `src/site.ts` の `indexable` を `true` にすると表示されなくなる。本番公開のときは Vercel の2つの値も削除する
-- 手元で試す：`npm run build` のあと `npm run review:local` → http://localhost:4400 （合言葉 `test`。GitHubには保存されない）
+- Vercel の Environment Variables に `REVIEW_GITHUB_TOKEN`（Issuesだけ読み書きできるGitHubの鍵）が必要。合言葉はなし（プレビューURLを知っている人は誰でもコメントを読み書きできる）
+- `src/site.ts` の `indexable` を `true` にすると表示されなくなる。本番公開のときは Vercel の値も削除する
+- 手元で試す：`npm run build` のあと `npm run review:local` → http://localhost:4400 （GitHubには保存されない）
 
 ## 手元で動かす
 

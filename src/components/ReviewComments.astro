@@ -23,21 +23,21 @@
           comment: 'コメント', list: '一覧', cancel: 'やめる', send: '送信', close: '閉じる', resolve: '解決',
           pick: 'コメントしたい場所をクリックしてください（Escでやめる）',
           placeholder: 'ここをこう変えてほしい、など', setupTitle: 'コメント機能を使う',
-          name: 'お名前', password: '合言葉', start: 'はじめる', none: 'まだコメントはありません',
+          name: 'お名前', start: 'はじめる', none: 'まだコメントはありません',
           thisPage: 'このページ', other: 'ほかのページ', confirmResolve: 'このコメントを「解決」にして消しますか？',
-          bad: '合言葉が違います', notReady: 'コメント機能の設定がまだ終わっていません',
+          notReady: 'コメント機能の設定がまだ終わっていません',
           failed: 'うまくいきませんでした。時間をおいてもう一度お試しください', sending: '送信中…',
-          screen: '画面幅', change: '名前・合言葉を変える', missingPin: '（場所が見つかりません）',
+          screen: '画面幅', change: '名前を変える', missingPin: '（場所が見つかりません）',
         }
       : {
           comment: 'Comment', list: 'All', cancel: 'Cancel', send: 'Post', close: 'Close', resolve: 'Resolve',
           pick: 'Click where you want to comment (Esc to cancel)',
           placeholder: 'What should change here?', setupTitle: 'Leave review comments',
-          name: 'Your name', password: 'Team password', start: 'Start', none: 'No comments yet',
+          name: 'Your name', start: 'Start', none: 'No comments yet',
           thisPage: 'This page', other: 'Other pages', confirmResolve: 'Mark this comment as resolved and hide it?',
-          bad: 'Wrong password', notReady: 'Comments are not set up yet',
+          notReady: 'Comments are not set up yet',
           failed: 'Something went wrong. Please try again later.', sending: 'Posting…',
-          screen: 'width', change: 'Change name / password', missingPin: '(location not found)',
+          screen: 'width', change: 'Change name', missingPin: '(location not found)',
         };
 
     // ---- 保存（ブラウザ内） ----
@@ -46,7 +46,6 @@
       set(k: string, v: string) { try { localStorage.setItem('rv-' + k, v); } catch {} },
     };
     let name = store.get('name');
-    let key = store.get('key');
 
     // ---- 画面の部品（Shadow DOM でサイトのCSSと切り離す） ----
     const root = host.attachShadow({ mode: 'open' });
@@ -116,7 +115,7 @@
     async function api(method: 'GET' | 'POST', body?: object) {
       const r = await fetch('/api/comments', {
         method,
-        headers: { 'x-review-key': key, ...(body ? { 'Content-Type': 'application/json' } : {}) },
+        headers: body ? { 'Content-Type': 'application/json' } : {},
         body: body ? JSON.stringify(body) : undefined,
       });
       let data: any = {};
@@ -124,40 +123,30 @@
       if (!r.ok) throw Object.assign(new Error(data.error || 'error'), { status: r.status });
       return data;
     }
-    const errText = (e: any) => (e.status === 401 ? T.bad : e.status === 503 || e.status === 404 ? T.notReady : T.failed);
+    const errText = (e: any) => (e.status === 503 || e.status === 404 ? T.notReady : T.failed);
 
-    // ---- 名前と合言葉 ----
+    // ---- 名前（初回だけ） ----
     function setup(then?: () => void) {
       const c = el('div', 'card');
       c.append(el('h3', '', T.setupTitle));
       const l1 = el('label', '', T.name); const i1 = el('input') as HTMLInputElement; i1.value = name; i1.autocomplete = 'name';
-      const l2 = el('label', '', T.password); const i2 = el('input') as HTMLInputElement; i2.type = 'password'; i2.value = key;
       const err = el('p', 'err'); err.hidden = true;
       const row = el('div', 'row');
       const cancel = el('button', 'ghost', T.cancel); const ok = el('button', '', T.start);
       row.append(cancel, ok);
-      c.append(l1, i1, l2, i2, err, row);
+      c.append(l1, i1, err, row);
       c.style.right = '16px'; c.style.bottom = '72px';
       showCard(c);
       i1.focus();
       cancel.onclick = closeCard;
-      const go = async () => {
-        if (!i1.value.trim() || !i2.value.trim()) return;
-        const oldKey = key;
-        key = i2.value.trim();
-        ok.disabled = true;
-        try {
-          const d = await api('GET');
-          name = i1.value.trim(); store.set('name', name); store.set('key', key);
-          comments = d.comments; draw();
-          closeCard();
-          then?.();
-        } catch (e) {
-          key = oldKey; err.textContent = errText(e); err.hidden = false; ok.disabled = false;
-        }
+      const go = () => {
+        if (!i1.value.trim()) return;
+        name = i1.value.trim(); store.set('name', name);
+        closeCard();
+        then?.();
       };
       ok.onclick = go;
-      i2.onkeydown = (e) => { if (e.key === 'Enter') go(); };
+      i1.onkeydown = (e) => { if (e.key === 'Enter') go(); };
     }
 
     // ---- コメントの印 ----
@@ -347,11 +336,10 @@
     // ---- ボタン ----
     root.querySelector('[data-act="new"]')!.addEventListener('click', () => {
       if (picking) return stopPick();
-      if (!name || !key) return setup(startPick);
+      if (!name) return setup(startPick);
       startPick();
     });
     root.querySelector('[data-act="list"]')!.addEventListener('click', () => {
-      if (!name || !key) return setup(showList);
       if (openCard?.classList.contains('panel')) return closeCard();
       showList();
     });
@@ -364,12 +352,10 @@
     new ResizeObserver(redraw).observe(document.body);
 
     // ---- 起動時に読み込む ----
-    if (key) {
-      api('GET').then((d) => {
-        comments = d.comments; draw();
-        const m = location.hash.match(/^#rv-(\d+)$/);
-        if (m) { const c = comments.find((x) => x.id === Number(m[1])); if (c) setTimeout(() => showComment(c), 300); }
-      }).catch(() => {});
-    }
+    api('GET').then((d) => {
+      comments = d.comments; draw();
+      const m = location.hash.match(/^#rv-(\d+)$/);
+      if (m) { const c = comments.find((x) => x.id === Number(m[1])); if (c) setTimeout(() => showComment(c), 300); }
+    }).catch(() => {});
   }
 </script>
