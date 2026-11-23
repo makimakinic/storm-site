@@ -1,0 +1,25 @@
+---
+// 日本中心の世界地図とロードショー都市。data/roadshow-cities.json から作ります。
+// 陸地の形（src/data/world-land-path.txt）は prototype/map.mjs で作ったものをそのまま使っています。
+import { geoNaturalEarth1 } from 'd3-geo';
+import land from '../data/world-land-path.txt?raw';
+import data from '../../data/roadshow-cities.json';
+
+const W = 1000, H = 470;
+const proj = geoNaturalEarth1().rotate([-150, 0]).fitExtent([[10, 10], [W - 10, H - 10]], { type: 'Sphere' });
+const r1 = (n: number) => +n.toFixed(1);
+const at = (lon: number, lat: number) => proj([lon, lat])!.map(r1) as [number, number];
+const f1 = (n: number) => n.toFixed(1);
+
+const [tx, ty] = proj(data.japan_marker as [number, number])!;
+const arc = (to: number[]) => {
+  const [x2, y2] = proj(to as [number, number])!;
+  const mx = (tx + x2) / 2;
+  const my = (ty + y2) / 2 - Math.min(120, Math.hypot(x2 - tx, y2 - ty) * 0.28);
+  return `M${f1(tx)},${f1(ty)} Q${f1(mx)},${f1(my)} ${f1(x2)},${f1(y2)}`;
+};
+const [jx, jy] = at(...(data.japan_marker as [number, number]));
+const label = data.regions.map((r) => `${r.cities.length} in ${r.en}`);
+const ariaLabel = `Overseas roadshow cities: ${label.slice(0, -1).join(', ')} and ${label.at(-1)}, connected to Japan`;
+---
+<figure class="mapfig"><svg class="worldmap" viewBox="0 0 1000 400" role="img" aria-label={ariaLabel}><path d={land} fill="#EADFE1"/><g fill="none" stroke="#932E3C" stroke-width="1.6" stroke-dasharray="4 5" opacity=".75">{data.regions.map((r) => <path d={arc(r.arc_to)}/>)}</g><g fill="#932E3C">{data.regions.flatMap((r) => r.cities.map((c) => { const [x, y] = at(c.lon, c.lat); return <circle cx={x} cy={y} r="4.2"><title>{c.en}</title></circle>; }))}</g><circle cx={jx} cy={jy} r="7.5" fill="#1E4B6C" stroke="#fff" stroke-width="2.5"/>{data.regions.map((r) => <text x={r.label.x} y={r.label.y} text-anchor={r.label.anchor} class="rl"><tspan class="en">{r.en} · {r.cities.length} cities</tspan><tspan class="ja">{r.ja}・{r.cities.length}都市</tspan></text>)}<text x={r1(jx + 12)} y={r1(jy - 12)} text-anchor="start" class="rl jp"><tspan class="en">Japan</tspan><tspan class="ja">日本</tspan></text></svg></figure>

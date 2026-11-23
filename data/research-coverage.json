@@ -1,0 +1,2918 @@
+[
+ {
+  "name": "ACOM",
+  "code": "8572"
+ },
+ {
+  "name": "ACSL",
+  "code": "6232"
+ },
+ {
+  "name": "Adastria",
+  "code": "2685"
+ },
+ {
+  "name": "ADEKA",
+  "code": "4401"
+ },
+ {
+  "name": "adish",
+  "code": "7093"
+ },
+ {
+  "name": "Adtec Plasma Technology",
+  "code": "6668"
+ },
+ {
+  "name": "Advantest",
+  "code": "6857"
+ },
+ {
+  "name": "Adventure",
+  "code": "6030"
+ },
+ {
+  "name": "Aeon Delight",
+  "code": "9787"
+ },
+ {
+  "name": "AeroEdge",
+  "code": "7409"
+ },
+ {
+  "name": "AI Inc",
+  "code": "4388"
+ },
+ {
+  "name": "AI Inside",
+  "code": "4488"
+ },
+ {
+  "name": "AI Robotics",
+  "code": "247A"
+ },
+ {
+  "name": "Aica Kogyo",
+  "code": "4206"
+ },
+ {
+  "name": "Aidma",
+  "code": "7373"
+ },
+ {
+  "name": "Ain Holdings",
+  "code": "9627"
+ },
+ {
+  "name": "Airtrip",
+  "code": "6191"
+ },
+ {
+  "name": "Aisan Industry",
+  "code": "7283"
+ },
+ {
+  "name": "Ajinomoto",
+  "code": "2802"
+ },
+ {
+  "name": "Akatsuki Corp",
+  "code": "8737"
+ },
+ {
+  "name": "Amano",
+  "code": "6436"
+ },
+ {
+  "name": "Amazia",
+  "code": "4424"
+ },
+ {
+  "name": "Amvis Holdings",
+  "code": "7071"
+ },
+ {
+  "name": "Anicom Holdings",
+  "code": "8715"
+ },
+ {
+  "name": "Anritsu",
+  "code": "6754"
+ },
+ {
+  "name": "Anycolor",
+  "code": "5032"
+ },
+ {
+  "name": "Appier",
+  "code": "4180"
+ },
+ {
+  "name": "Archion Corp",
+  "code": "543A"
+ },
+ {
+  "name": "Arcland Sakamoto",
+  "code": "9842"
+ },
+ {
+  "name": "Arcland Service",
+  "code": "3085"
+ },
+ {
+  "name": "ARE Holdings",
+  "code": "5857"
+ },
+ {
+  "name": "Arealink",
+  "code": "8914"
+ },
+ {
+  "name": "Argo Graphics",
+  "code": "7595"
+ },
+ {
+  "name": "Arisawa Manufacturing",
+  "code": "5208"
+ },
+ {
+  "name": "Artiza Networks",
+  "code": "6778"
+ },
+ {
+  "name": "Artner",
+  "code": "2163"
+ },
+ {
+  "name": "AS ONE",
+  "code": "7476"
+ },
+ {
+  "name": "Asahi Diamond Industrial",
+  "code": "6140"
+ },
+ {
+  "name": "Asahi Glass",
+  "code": "5201"
+ },
+ {
+  "name": "Asahi Holdings",
+  "code": "5857"
+ },
+ {
+  "name": "Ascentech",
+  "code": "3565"
+ },
+ {
+  "name": "Asia Pile Holdings Corp",
+  "code": "5288"
+ },
+ {
+  "name": "ATLED",
+  "code": "3969"
+ },
+ {
+  "name": "Atrae",
+  "code": "6194"
+ },
+ {
+  "name": "Autobacs Seven",
+  "code": "9832"
+ },
+ {
+  "name": "AVANT",
+  "code": "3836"
+ },
+ {
+  "name": "Avex",
+  "code": "7860"
+ },
+ {
+  "name": "Axxzia",
+  "code": "4936"
+ },
+ {
+  "name": "AZ-com Maruwa",
+  "code": "9090"
+ },
+ {
+  "name": "Azbil",
+  "code": "6845"
+ },
+ {
+  "name": "Azia",
+  "code": "2352"
+ },
+ {
+  "name": "AZoom",
+  "code": "3496"
+ },
+ {
+  "name": "Balmuda",
+  "code": "6612"
+ },
+ {
+  "name": "BASE",
+  "code": "4477"
+ },
+ {
+  "name": "baudroie",
+  "code": "4413"
+ },
+ {
+  "name": "BayCurrent Consulting",
+  "code": "6532"
+ },
+ {
+  "name": "Beaglee",
+  "code": "3981"
+ },
+ {
+  "name": "Belc",
+  "code": "9974"
+ },
+ {
+  "name": "Bell System24",
+  "code": "6183"
+ },
+ {
+  "name": "Benefit One",
+  "code": "2412"
+ },
+ {
+  "name": "Bengo4.Com",
+  "code": "6027"
+ },
+ {
+  "name": "Bic Camera",
+  "code": "3048"
+ },
+ {
+  "name": "Bike O",
+  "code": "3377"
+ },
+ {
+  "name": "BML",
+  "code": "4694"
+ },
+ {
+  "name": "Bookoff",
+  "code": "3313"
+ },
+ {
+  "name": "BrainPad",
+  "code": "3655"
+ },
+ {
+  "name": "Brains Technology",
+  "code": "4075"
+ },
+ {
+  "name": "Broadband Security",
+  "code": "4398"
+ },
+ {
+  "name": "Broadleaf",
+  "code": "3673"
+ },
+ {
+  "name": "Business Brain Showa-Ota",
+  "code": "9658"
+ },
+ {
+  "name": "Buysell Technology",
+  "code": "7685"
+ },
+ {
+  "name": "C.Uyemura",
+  "code": "4966"
+ },
+ {
+  "name": "Calbee",
+  "code": "2229"
+ },
+ {
+  "name": "Capcom",
+  "code": "9697"
+ },
+ {
+  "name": "CareerIndex",
+  "code": "6538"
+ },
+ {
+  "name": "Careerlink",
+  "code": "6070"
+ },
+ {
+  "name": "Carenet",
+  "code": "2150"
+ },
+ {
+  "name": "Carlit",
+  "code": "4275"
+ },
+ {
+  "name": "Cawachi",
+  "code": "2664"
+ },
+ {
+  "name": "CE Holdings",
+  "code": "4320"
+ },
+ {
+  "name": "CellSource",
+  "code": "4880"
+ },
+ {
+  "name": "Central Automotive Products",
+  "code": "8117"
+ },
+ {
+  "name": "Ceres",
+  "code": "3696"
+ },
+ {
+  "name": "Change",
+  "code": "3962"
+ },
+ {
+  "name": "Chatwork",
+  "code": "4448"
+ },
+ {
+  "name": "Chudenko",
+  "code": "1941"
+ },
+ {
+  "name": "Chugoku Marine Paints",
+  "code": "4617"
+ },
+ {
+  "name": "Ci Medical",
+  "code": "3540"
+ },
+ {
+  "name": "CKD",
+  "code": "6407"
+ },
+ {
+  "name": "Cleanup",
+  "code": "7955"
+ },
+ {
+  "name": "COLOPL",
+  "code": "3668"
+ },
+ {
+  "name": "Commerce One",
+  "code": "4496"
+ },
+ {
+  "name": "Comture",
+  "code": "3844"
+ },
+ {
+  "name": "COOKPAD",
+  "code": "2193"
+ },
+ {
+  "name": "Core Concept Technologies",
+  "code": "4371"
+ },
+ {
+  "name": "Cosmos Pharmaceutical",
+  "code": "3349"
+ },
+ {
+  "name": "COTA",
+  "code": "4923"
+ },
+ {
+  "name": "Cover",
+  "code": "5253"
+ },
+ {
+  "name": "Create Restaurants",
+  "code": "3387"
+ },
+ {
+  "name": "Create SD Holdings",
+  "code": "3148"
+ },
+ {
+  "name": "Creek & River",
+  "code": "4763"
+ },
+ {
+  "name": "Cresco",
+  "code": "4674"
+ },
+ {
+  "name": "Crowdworks",
+  "code": "3900"
+ },
+ {
+  "name": "CTI Engineering",
+  "code": "9621"
+ },
+ {
+  "name": "Cube System",
+  "code": "2335"
+ },
+ {
+  "name": "CUC",
+  "code": "9158"
+ },
+ {
+  "name": "Curves Holdings",
+  "code": "7085"
+ },
+ {
+  "name": "CyberAgent",
+  "code": "4751"
+ },
+ {
+  "name": "Cyberdyne",
+  "code": "7779"
+ },
+ {
+  "name": "DA Consortium",
+  "code": "4281"
+ },
+ {
+  "name": "Daiei Kankyo",
+  "code": "9336"
+ },
+ {
+  "name": "Daihatsu Infinearth Mfg",
+  "code": "6023"
+ },
+ {
+  "name": "Daiken Medical",
+  "code": "7775"
+ },
+ {
+  "name": "Daikin Industries",
+  "code": "6367"
+ },
+ {
+  "name": "Daikokutenbussan",
+  "code": "2791"
+ },
+ {
+  "name": "Daikokuya",
+  "code": "6993"
+ },
+ {
+  "name": "DaikyoNishikawa",
+  "code": "4246"
+ },
+ {
+  "name": "Daio Paper",
+  "code": "3880"
+ },
+ {
+  "name": "Daiseki",
+  "code": "9793"
+ },
+ {
+  "name": "Daito Chemix",
+  "code": "4366"
+ },
+ {
+  "name": "Daito Trust",
+  "code": "1878"
+ },
+ {
+  "name": "Daiwabo",
+  "code": "3107"
+ },
+ {
+  "name": "DCM",
+  "code": "3050"
+ },
+ {
+  "name": "Densan System",
+  "code": "3630"
+ },
+ {
+  "name": "Dentsu",
+  "code": "4324"
+ },
+ {
+  "name": "Descente",
+  "code": "8114"
+ },
+ {
+  "name": "Designone Japan",
+  "code": "6048"
+ },
+ {
+  "name": "Dexerials",
+  "code": "4980"
+ },
+ {
+  "name": "Digital Arts",
+  "code": "2326"
+ },
+ {
+  "name": "Digital Garage",
+  "code": "4819"
+ },
+ {
+  "name": "DIGITAL HEARTS",
+  "code": "3676"
+ },
+ {
+  "name": "Dip",
+  "code": "2379"
+ },
+ {
+  "name": "Direct Marketing MiX",
+  "code": "7354"
+ },
+ {
+  "name": "Disco",
+  "code": "6146"
+ },
+ {
+  "name": "DTS",
+  "code": "9682"
+ },
+ {
+  "name": "E-Guardian",
+  "code": "6050"
+ },
+ {
+  "name": "eBASE",
+  "code": "3835"
+ },
+ {
+  "name": "eBook Initiative",
+  "code": "3658"
+ },
+ {
+  "name": "EDION",
+  "code": "2730"
+ },
+ {
+  "name": "EF-ON",
+  "code": "9514"
+ },
+ {
+  "name": "eGuarantee",
+  "code": "8771"
+ },
+ {
+  "name": "Eiken Chemical",
+  "code": "4549"
+ },
+ {
+  "name": "Elan",
+  "code": "6099"
+ },
+ {
+  "name": "Elecom",
+  "code": "6750"
+ },
+ {
+  "name": "EM Systems",
+  "code": "4820"
+ },
+ {
+  "name": "en-japan",
+  "code": "4849"
+ },
+ {
+  "name": "Endo Lighting",
+  "code": "6932"
+ },
+ {
+  "name": "ENECHANGE",
+  "code": "4169"
+ },
+ {
+  "name": "Eneres",
+  "code": "6079"
+ },
+ {
+  "name": "Enigmo",
+  "code": "3665"
+ },
+ {
+  "name": "Enplas",
+  "code": "6961"
+ },
+ {
+  "name": "eRex",
+  "code": "9517"
+ },
+ {
+  "name": "eSOL",
+  "code": "4420"
+ },
+ {
+  "name": "ESPEC",
+  "code": "6859"
+ },
+ {
+  "name": "euglena",
+  "code": "2931"
+ },
+ {
+  "name": "ExaWizards",
+  "code": "4259"
+ },
+ {
+  "name": "Exedy",
+  "code": "7278"
+ },
+ {
+  "name": "Ezaki Glico",
+  "code": "2206"
+ },
+ {
+  "name": "F@N COMMUNICATIONS",
+  "code": "2461"
+ },
+ {
+  "name": "Ferrotec",
+  "code": "6890"
+ },
+ {
+  "name": "FFRI",
+  "code": "3692"
+ },
+ {
+  "name": "Fibergate",
+  "code": "9450"
+ },
+ {
+  "name": "Finatext",
+  "code": "4419"
+ },
+ {
+  "name": "Findex",
+  "code": "3649"
+ },
+ {
+  "name": "FIRSTLOGIC",
+  "code": "6037"
+ },
+ {
+  "name": "Fixstars",
+  "code": "3687"
+ },
+ {
+  "name": "for Startups",
+  "code": "7089"
+ },
+ {
+  "name": "Foster Electric",
+  "code": "6794"
+ },
+ {
+  "name": "FP Corp",
+  "code": "7947"
+ },
+ {
+  "name": "FP Partner",
+  "code": "7388"
+ },
+ {
+  "name": "FreakOut Holdings",
+  "code": "6094"
+ },
+ {
+  "name": "Freebit",
+  "code": "3843"
+ },
+ {
+  "name": "freee",
+  "code": "4478"
+ },
+ {
+  "name": "Freund",
+  "code": "6312"
+ },
+ {
+  "name": "Fuji Corp",
+  "code": "7605"
+ },
+ {
+  "name": "Fuji Electric",
+  "code": "6504"
+ },
+ {
+  "name": "Fuji Kyuko",
+  "code": "9010"
+ },
+ {
+  "name": "Fuji Media",
+  "code": "4676"
+ },
+ {
+  "name": "Fuji Seal",
+  "code": "7864"
+ },
+ {
+  "name": "Fuji Soft",
+  "code": "9749"
+ },
+ {
+  "name": "Fujibo",
+  "code": "3104"
+ },
+ {
+  "name": "Fujimi",
+  "code": "5384"
+ },
+ {
+  "name": "Fujita Kanko",
+  "code": "9722"
+ },
+ {
+  "name": "Fukui Computer",
+  "code": "9790"
+ },
+ {
+  "name": "Fukushima Industries",
+  "code": "6420"
+ },
+ {
+  "name": "Full Speed",
+  "code": "2159"
+ },
+ {
+  "name": "FULLCAST",
+  "code": "4848"
+ },
+ {
+  "name": "Funai Soken",
+  "code": "9757"
+ },
+ {
+  "name": "Furuya Metal",
+  "code": "7826"
+ },
+ {
+  "name": "Future",
+  "code": "4722"
+ },
+ {
+  "name": "G-TEKT",
+  "code": "5970"
+ },
+ {
+  "name": "Gakujo",
+  "code": "2301"
+ },
+ {
+  "name": "Genky DrugStores",
+  "code": "9267"
+ },
+ {
+  "name": "GEO Holdings",
+  "code": "2681"
+ },
+ {
+  "name": "Gfoot",
+  "code": "2686"
+ },
+ {
+  "name": "Giftee",
+  "code": "4449"
+ },
+ {
+  "name": "Giga Prize",
+  "code": "3830"
+ },
+ {
+  "name": "Giken",
+  "code": "6289"
+ },
+ {
+  "name": "GMO Financial Gate",
+  "code": "4051"
+ },
+ {
+  "name": "GMO Internet",
+  "code": "9449"
+ },
+ {
+  "name": "GMO Payment Gateway",
+  "code": "3769"
+ },
+ {
+  "name": "GMO Pepabo",
+  "code": "3633"
+ },
+ {
+  "name": "GNI Group",
+  "code": "2160"
+ },
+ {
+  "name": "Goldwin",
+  "code": "8111"
+ },
+ {
+  "name": "Goodpatch",
+  "code": "7351"
+ },
+ {
+  "name": "Gree",
+  "code": "3632"
+ },
+ {
+  "name": "gremz",
+  "code": "3150"
+ },
+ {
+  "name": "GS Yuasa",
+  "code": "6674"
+ },
+ {
+  "name": "Gunosy",
+  "code": "6047"
+ },
+ {
+  "name": "Gunze",
+  "code": "3002"
+ },
+ {
+  "name": "Gurunavi",
+  "code": "2440"
+ },
+ {
+  "name": "Hagihara Industries",
+  "code": "7856"
+ },
+ {
+  "name": "Halows",
+  "code": "2742"
+ },
+ {
+  "name": "Hamamatsu",
+  "code": "6965"
+ },
+ {
+  "name": "Hamee",
+  "code": "3134"
+ },
+ {
+  "name": "Hanwa",
+  "code": "8078"
+ },
+ {
+  "name": "Happinet",
+  "code": "7552"
+ },
+ {
+  "name": "Hard Off",
+  "code": "2674"
+ },
+ {
+  "name": "Harmonic Drive Systems",
+  "code": "6324"
+ },
+ {
+  "name": "Haseko",
+  "code": "1808"
+ },
+ {
+  "name": "Hazama Ando",
+  "code": "1719"
+ },
+ {
+  "name": "Healios",
+  "code": "4593"
+ },
+ {
+  "name": "HENNGE",
+  "code": "4475"
+ },
+ {
+  "name": "Heroz",
+  "code": "4382"
+ },
+ {
+  "name": "HI-LEX",
+  "code": "7279"
+ },
+ {
+  "name": "Hibiya Engineering",
+  "code": "1982"
+ },
+ {
+  "name": "Hikari Tsushin",
+  "code": "9435"
+ },
+ {
+  "name": "HIOKI EE Corp",
+  "code": "6866"
+ },
+ {
+  "name": "Hirano Tecseed",
+  "code": "6245"
+ },
+ {
+  "name": "Hirata",
+  "code": "6258"
+ },
+ {
+  "name": "HIS",
+  "code": "9603"
+ },
+ {
+  "name": "Hitachi Kokusai Electric",
+  "code": "6756"
+ },
+ {
+  "name": "Hito Communications",
+  "code": "3654"
+ },
+ {
+  "name": "Hochiki",
+  "code": "6745"
+ },
+ {
+  "name": "Hogy Medical",
+  "code": "3593"
+ },
+ {
+  "name": "Holon",
+  "code": "7748"
+ },
+ {
+  "name": "Honeys",
+  "code": "2792"
+ },
+ {
+  "name": "Hoosiers",
+  "code": "3284"
+ },
+ {
+  "name": "HORIBA",
+  "code": "6856"
+ },
+ {
+  "name": "Hoshizaki Electric",
+  "code": "6465"
+ },
+ {
+  "name": "Hosokawa Micron",
+  "code": "6277"
+ },
+ {
+  "name": "Hotto Link",
+  "code": "3680"
+ },
+ {
+  "name": "HRnetGroup",
+  "code": "HRNET SP"
+ },
+ {
+  "name": "i3 Systems",
+  "code": "4495"
+ },
+ {
+  "name": "Ibiden",
+  "code": "4062"
+ },
+ {
+  "name": "Idemitsu Kosan",
+  "code": "5019"
+ },
+ {
+  "name": "IDOM",
+  "code": "7599"
+ },
+ {
+  "name": "Iida Group",
+  "code": "3291"
+ },
+ {
+  "name": "IMAGICA GROUP",
+  "code": "6879"
+ },
+ {
+  "name": "Infocom",
+  "code": "4348"
+ },
+ {
+  "name": "Infomart",
+  "code": "2492"
+ },
+ {
+  "name": "Inforich",
+  "code": "9338"
+ },
+ {
+  "name": "Insource",
+  "code": "6200"
+ },
+ {
+  "name": "Inter Action",
+  "code": "7725"
+ },
+ {
+  "name": "Interfactory",
+  "code": "4057"
+ },
+ {
+  "name": "Internet Initiative Japan",
+  "code": "3774"
+ },
+ {
+  "name": "Iriso Electronics",
+  "code": "6908"
+ },
+ {
+  "name": "Iseki",
+  "code": "6310"
+ },
+ {
+  "name": "ISID",
+  "code": "4812"
+ },
+ {
+  "name": "Istyle",
+  "code": "3660"
+ },
+ {
+  "name": "Itochu Techno-Solutions",
+  "code": "4739"
+ },
+ {
+  "name": "Itoki",
+  "code": "7972"
+ },
+ {
+  "name": "J Front Retailing",
+  "code": "3086"
+ },
+ {
+  "name": "J.E.T.",
+  "code": "6228"
+ },
+ {
+  "name": "JAE",
+  "code": "6807"
+ },
+ {
+  "name": "Jalux",
+  "code": "2729"
+ },
+ {
+  "name": "Jamco",
+  "code": "7408"
+ },
+ {
+  "name": "Japan Airport Terminal",
+  "code": "9706"
+ },
+ {
+  "name": "Japan Business Systems",
+  "code": "5036"
+ },
+ {
+  "name": "Japan Display",
+  "code": "6740"
+ },
+ {
+  "name": "Japan Elevator Service",
+  "code": "6544"
+ },
+ {
+  "name": "Japan Eyewear Holdings",
+  "code": "5889"
+ },
+ {
+  "name": "Japan Hospice",
+  "code": "7061"
+ },
+ {
+  "name": "Japan Living Warranty",
+  "code": "7320"
+ },
+ {
+  "name": "Japan Material",
+  "code": "6055"
+ },
+ {
+  "name": "Japan Wool Textile",
+  "code": "3201"
+ },
+ {
+  "name": "JCU",
+  "code": "4975"
+ },
+ {
+  "name": "Jeol",
+  "code": "6951"
+ },
+ {
+  "name": "JIbannet",
+  "code": "6072"
+ },
+ {
+  "name": "Jimoty",
+  "code": "7082"
+ },
+ {
+  "name": "JINS",
+  "code": "3046"
+ },
+ {
+  "name": "JM Holdings",
+  "code": "3539"
+ },
+ {
+  "name": "JMDC",
+  "code": "4483"
+ },
+ {
+  "name": "JSR",
+  "code": "4185"
+ },
+ {
+  "name": "JSW",
+  "code": "5631"
+ },
+ {
+  "name": "JTEKT",
+  "code": "6473"
+ },
+ {
+  "name": "JVCKENWOOD",
+  "code": "6632"
+ },
+ {
+  "name": "K's Holdings",
+  "code": "8282"
+ },
+ {
+  "name": "Kaga Electronics",
+  "code": "8154"
+ },
+ {
+  "name": "KAIZEN PLATFORM",
+  "code": "4170"
+ },
+ {
+  "name": "Kajima Corp",
+  "code": "1812"
+ },
+ {
+  "name": "Kakaku.com",
+  "code": "2371"
+ },
+ {
+  "name": "Kamakura Shinsho",
+  "code": "6184"
+ },
+ {
+  "name": "Kanamic Network",
+  "code": "3939"
+ },
+ {
+  "name": "Kanamoto",
+  "code": "9678"
+ },
+ {
+  "name": "Kanto Denka",
+  "code": "4047"
+ },
+ {
+  "name": "Kaonavi",
+  "code": "4435"
+ },
+ {
+  "name": "Karadanote",
+  "code": "4014"
+ },
+ {
+  "name": "Kawada Technologies",
+  "code": "3443"
+ },
+ {
+  "name": "Kayac",
+  "code": "3904"
+ },
+ {
+  "name": "KeePer Technical Laboratory",
+  "code": "6036"
+ },
+ {
+  "name": "Kenedix",
+  "code": "4321"
+ },
+ {
+  "name": "KH Neochem",
+  "code": "4189"
+ },
+ {
+  "name": "Kimura Kohki",
+  "code": "6231"
+ },
+ {
+  "name": "Kinden",
+  "code": "1944"
+ },
+ {
+  "name": "Kintetsu World Express",
+  "code": "9375"
+ },
+ {
+  "name": "Kitanotatsujin",
+  "code": "2930"
+ },
+ {
+  "name": "Kitz",
+  "code": "6498"
+ },
+ {
+  "name": "KOA",
+  "code": "6999"
+ },
+ {
+  "name": "Kobayashi Pharmaceutical",
+  "code": "4967"
+ },
+ {
+  "name": "Kobe Bussan",
+  "code": "3038"
+ },
+ {
+  "name": "Komehyo",
+  "code": "2780"
+ },
+ {
+  "name": "Komeri",
+  "code": "8218"
+ },
+ {
+  "name": "Kosaido",
+  "code": "7868"
+ },
+ {
+  "name": "Koshidaka Holdings",
+  "code": "2157"
+ },
+ {
+  "name": "Koukandekirukun",
+  "code": "7695"
+ },
+ {
+  "name": "Kudan",
+  "code": "4425"
+ },
+ {
+  "name": "Kumiai Chemical",
+  "code": "4996"
+ },
+ {
+  "name": "Kura Sushi",
+  "code": "2695"
+ },
+ {
+  "name": "Kurita Water",
+  "code": "6370"
+ },
+ {
+  "name": "Kusuri no Aoki",
+  "code": "3549"
+ },
+ {
+  "name": "KYB",
+  "code": "7242"
+ },
+ {
+  "name": "Kyoritsu Maintenance",
+  "code": "9616"
+ },
+ {
+  "name": "Kyudenko",
+  "code": "1959"
+ },
+ {
+  "name": "LAC",
+  "code": "3857"
+ },
+ {
+  "name": "Laox",
+  "code": "8202"
+ },
+ {
+  "name": "Lasertec",
+  "code": "6920"
+ },
+ {
+  "name": "LEC",
+  "code": "7874"
+ },
+ {
+  "name": "LeoPalace21",
+  "code": "8848"
+ },
+ {
+  "name": "LIFE",
+  "code": "8194"
+ },
+ {
+  "name": "LIFEDRINK",
+  "code": "2585"
+ },
+ {
+  "name": "LIFULL",
+  "code": "2120"
+ },
+ {
+  "name": "LINE",
+  "code": "3938"
+ },
+ {
+  "name": "Linical",
+  "code": "2183"
+ },
+ {
+  "name": "Link & Motivation",
+  "code": "2170"
+ },
+ {
+  "name": "Lion",
+  "code": "4912"
+ },
+ {
+  "name": "LITALICO",
+  "code": "7366"
+ },
+ {
+  "name": "Livesense",
+  "code": "6054"
+ },
+ {
+  "name": "Locoguide",
+  "code": "4497"
+ },
+ {
+  "name": "Locondo",
+  "code": "3558"
+ },
+ {
+  "name": "LTS",
+  "code": "6560"
+ },
+ {
+  "name": "M&A Capital Partners",
+  "code": "6080"
+ },
+ {
+  "name": "M&A Research Institute",
+  "code": "9552"
+ },
+ {
+  "name": "m-up",
+  "code": "3661"
+ },
+ {
+  "name": "m3",
+  "code": "2413"
+ },
+ {
+  "name": "Macromill",
+  "code": "3978"
+ },
+ {
+  "name": "Maeda",
+  "code": "1824"
+ },
+ {
+  "name": "Makuake",
+  "code": "4479"
+ },
+ {
+  "name": "Management Solutions",
+  "code": "7033"
+ },
+ {
+  "name": "Mandom",
+  "code": "4917"
+ },
+ {
+  "name": "MANI",
+  "code": "7730"
+ },
+ {
+  "name": "MarkLines",
+  "code": "3901"
+ },
+ {
+  "name": "Mars Group",
+  "code": "6419"
+ },
+ {
+  "name": "Marui Group",
+  "code": "8252"
+ },
+ {
+  "name": "Maruwa Unyu KIkan",
+  "code": "9090"
+ },
+ {
+  "name": "Matsuda Sangyo",
+  "code": "7456"
+ },
+ {
+  "name": "Matsumotokiyoshi Holdings",
+  "code": "3088"
+ },
+ {
+  "name": "Maxell",
+  "code": "6810"
+ },
+ {
+  "name": "McDonald's Japan",
+  "code": "2702"
+ },
+ {
+  "name": "MCJ",
+  "code": "6670"
+ },
+ {
+  "name": "MEC",
+  "code": "4971"
+ },
+ {
+  "name": "Media Do",
+  "code": "3678"
+ },
+ {
+  "name": "Medical Data Vision",
+  "code": "3902"
+ },
+ {
+  "name": "Medical System Network",
+  "code": "4350"
+ },
+ {
+  "name": "Medipal",
+  "code": "7459"
+ },
+ {
+  "name": "Medley",
+  "code": "4480"
+ },
+ {
+  "name": "MedPeer",
+  "code": "6095"
+ },
+ {
+  "name": "Megachips",
+  "code": "6875"
+ },
+ {
+  "name": "Meidensha",
+  "code": "6508"
+ },
+ {
+  "name": "Meitec",
+  "code": "9744"
+ },
+ {
+  "name": "Members",
+  "code": "2130"
+ },
+ {
+  "name": "Menicon",
+  "code": "7780"
+ },
+ {
+  "name": "Mercari",
+  "code": "4385"
+ },
+ {
+  "name": "Metaps",
+  "code": "6172"
+ },
+ {
+  "name": "Micronics Japan",
+  "code": "6871"
+ },
+ {
+  "name": "Microwave Chemical",
+  "code": "9227"
+ },
+ {
+  "name": "Midac",
+  "code": "6564"
+ },
+ {
+  "name": "MIGALO Holdings",
+  "code": "5535"
+ },
+ {
+  "name": "Milbon",
+  "code": "4919"
+ },
+ {
+  "name": "Mimasu Semiconductor",
+  "code": "8155"
+ },
+ {
+  "name": "Minkabu the Infonoid",
+  "code": "4436"
+ },
+ {
+  "name": "Mirarth",
+  "code": "8897"
+ },
+ {
+  "name": "Miroku Jyoho Service",
+  "code": "9928"
+ },
+ {
+  "name": "Misawa Homes",
+  "code": "1722"
+ },
+ {
+  "name": "MISUMI",
+  "code": "9962"
+ },
+ {
+  "name": "Mitsubishi Logisnext",
+  "code": "7105"
+ },
+ {
+  "name": "Mitsubishi Motors",
+  "code": "7211"
+ },
+ {
+  "name": "Mitsubishi Steel",
+  "code": "5632"
+ },
+ {
+  "name": "Mitsuboshi Belting",
+  "code": "5192"
+ },
+ {
+  "name": "Mitsui High-Tec",
+  "code": "6966"
+ },
+ {
+  "name": "Miura",
+  "code": "6005"
+ },
+ {
+  "name": "Mobile Create",
+  "code": "3669"
+ },
+ {
+  "name": "Money Forward",
+  "code": "3994"
+ },
+ {
+  "name": "Money Platform",
+  "code": "8732"
+ },
+ {
+  "name": "MonotaRO",
+  "code": "3064"
+ },
+ {
+  "name": "Morita Holdings",
+  "code": "6455"
+ },
+ {
+  "name": "MOS Food Services",
+  "code": "8153"
+ },
+ {
+  "name": "MRT",
+  "code": "6034"
+ },
+ {
+  "name": "Mugen Estate",
+  "code": "3299"
+ },
+ {
+  "name": "Musashi Seimitsu",
+  "code": "7220"
+ },
+ {
+  "name": "Mynet",
+  "code": "3928"
+ },
+ {
+  "name": "Nabtesco Corp",
+  "code": "6268"
+ },
+ {
+  "name": "Nachi-Fujikoshi",
+  "code": "6474"
+ },
+ {
+  "name": "Nagaileben",
+  "code": "7447"
+ },
+ {
+  "name": "Nakanishi",
+  "code": "7716"
+ },
+ {
+  "name": "NEC Networks & System Integration",
+  "code": "1973"
+ },
+ {
+  "name": "NEOJAPAN",
+  "code": "3921"
+ },
+ {
+  "name": "Net Marketing",
+  "code": "6175"
+ },
+ {
+  "name": "Net One Systems",
+  "code": "7518"
+ },
+ {
+  "name": "Nexon",
+  "code": "3659"
+ },
+ {
+  "name": "Nextage",
+  "code": "3186"
+ },
+ {
+  "name": "NexTone",
+  "code": "7094"
+ },
+ {
+  "name": "NHK Spring",
+  "code": "5991"
+ },
+ {
+  "name": "Nichias",
+  "code": "5393"
+ },
+ {
+  "name": "Nidec",
+  "code": "6594"
+ },
+ {
+  "name": "Nifco",
+  "code": "7988"
+ },
+ {
+  "name": "Nihon Chouzai",
+  "code": "3341"
+ },
+ {
+  "name": "Nihon Dempa Kogyo",
+  "code": "6779"
+ },
+ {
+  "name": "Nihon Eslead",
+  "code": "8877"
+ },
+ {
+  "name": "Nihon Flush",
+  "code": "7820"
+ },
+ {
+  "name": "Nihon Jyoho Create",
+  "code": "4054"
+ },
+ {
+  "name": "Nihon Kohden",
+  "code": "6849"
+ },
+ {
+  "name": "Nihon M&A Center",
+  "code": "2127"
+ },
+ {
+  "name": "Nihon Nohyaku",
+  "code": "4997"
+ },
+ {
+  "name": "Nikkiso",
+  "code": "6376"
+ },
+ {
+  "name": "Nikon",
+  "code": "7731"
+ },
+ {
+  "name": "Nippon Ceramic",
+  "code": "6929"
+ },
+ {
+  "name": "Nippon Concept",
+  "code": "9386"
+ },
+ {
+  "name": "Nippon Electric Glass",
+  "code": "5214"
+ },
+ {
+  "name": "Nippon Kodoshi",
+  "code": "3891"
+ },
+ {
+  "name": "Nippon Seiki",
+  "code": "7287"
+ },
+ {
+  "name": "Nippon Sheet Glass",
+  "code": "5202"
+ },
+ {
+  "name": "Nippon Shokubai",
+  "code": "4114"
+ },
+ {
+  "name": "Nippon Soda",
+  "code": "4041"
+ },
+ {
+  "name": "Nippon Steel Sumikin Busan",
+  "code": "9810"
+ },
+ {
+  "name": "Nippon Systemware",
+  "code": "9739"
+ },
+ {
+  "name": "Nippon View Hotel",
+  "code": "6097"
+ },
+ {
+  "name": "Nipro",
+  "code": "8086"
+ },
+ {
+  "name": "Nishikawa Rubber",
+  "code": "5161"
+ },
+ {
+  "name": "Nissan Motor",
+  "code": "7201"
+ },
+ {
+  "name": "Nissei ASB Machine",
+  "code": "6284"
+ },
+ {
+  "name": "Nissha Printing",
+  "code": "7915"
+ },
+ {
+  "name": "Nisshinbo",
+  "code": "3105"
+ },
+ {
+  "name": "Nitto Boseki",
+  "code": "3110"
+ },
+ {
+  "name": "Nitto Kogyo",
+  "code": "6651"
+ },
+ {
+  "name": "NOF Corporation",
+  "code": "4403"
+ },
+ {
+  "name": "Nohmi Bosai",
+  "code": "6744"
+ },
+ {
+  "name": "Nomura",
+  "code": "9716"
+ },
+ {
+  "name": "Nomura Micro Science",
+  "code": "6254"
+ },
+ {
+  "name": "Noritake",
+  "code": "5331"
+ },
+ {
+  "name": "Noritsu Koki",
+  "code": "7744"
+ },
+ {
+  "name": "Northsand",
+  "code": "446A"
+ },
+ {
+  "name": "NPC",
+  "code": "6255"
+ },
+ {
+  "name": "NS Solutions",
+  "code": "2327"
+ },
+ {
+  "name": "NSD",
+  "code": "9759"
+ },
+ {
+  "name": "Nuflare Technology",
+  "code": "6256"
+ },
+ {
+  "name": "Obara",
+  "code": "6877"
+ },
+ {
+  "name": "Oisix ra daichi",
+  "code": "3182"
+ },
+ {
+  "name": "Oji Holdings",
+  "code": "3861"
+ },
+ {
+  "name": "OKI Electric",
+  "code": "6703"
+ },
+ {
+  "name": "Omron",
+  "code": "6645"
+ },
+ {
+  "name": "ONDECK",
+  "code": "7360"
+ },
+ {
+  "name": "Open Door",
+  "code": "3926"
+ },
+ {
+  "name": "Open Up",
+  "code": "2154"
+ },
+ {
+  "name": "OPT Holding",
+  "code": "2389"
+ },
+ {
+  "name": "Optex",
+  "code": "6914"
+ },
+ {
+  "name": "OPTiM",
+  "code": "3694"
+ },
+ {
+  "name": "Organo",
+  "code": "6368"
+ },
+ {
+  "name": "oRo",
+  "code": "3983"
+ },
+ {
+  "name": "Osaka Organic Chemical Industry",
+  "code": "4187"
+ },
+ {
+  "name": "OSAKA Titanium Technologies",
+  "code": "5726"
+ },
+ {
+  "name": "Osaki Electric",
+  "code": "6644"
+ },
+ {
+  "name": "OSG",
+  "code": "6136"
+ },
+ {
+  "name": "Outsourcing",
+  "code": "2427"
+ },
+ {
+  "name": "Oxide",
+  "code": "6521"
+ },
+ {
+  "name": "p-ban.com",
+  "code": "3559"
+ },
+ {
+  "name": "Pacific Metals",
+  "code": "5541"
+ },
+ {
+  "name": "PALTAC CORPORATION",
+  "code": "8283"
+ },
+ {
+  "name": "Pan Pacific International",
+  "code": "7532"
+ },
+ {
+  "name": "Park24",
+  "code": "4666"
+ },
+ {
+  "name": "Pasona",
+  "code": "2168"
+ },
+ {
+  "name": "PCA",
+  "code": "9629"
+ },
+ {
+  "name": "Peers",
+  "code": "7066"
+ },
+ {
+  "name": "Persol Holdings",
+  "code": "2181"
+ },
+ {
+  "name": "Pharma Foods International",
+  "code": "2929"
+ },
+ {
+  "name": "Phil Company",
+  "code": "3267"
+ },
+ {
+  "name": "PHYZ",
+  "code": "9325"
+ },
+ {
+  "name": "Pigeon",
+  "code": "7956"
+ },
+ {
+  "name": "PILLAR",
+  "code": "6490"
+ },
+ {
+  "name": "Piolax",
+  "code": "5988"
+ },
+ {
+  "name": "Pipedo",
+  "code": "3919"
+ },
+ {
+  "name": "PKSHA Technology",
+  "code": "3993"
+ },
+ {
+  "name": "Plus Alpha Consulting",
+  "code": "4071"
+ },
+ {
+  "name": "Pola Orbis",
+  "code": "4927"
+ },
+ {
+  "name": "Poletowin Pitcrew",
+  "code": "3657"
+ },
+ {
+  "name": "Port",
+  "code": "7047"
+ },
+ {
+  "name": "PowerX",
+  "code": "485A"
+ },
+ {
+  "name": "PR TIMES",
+  "code": "3922"
+ },
+ {
+  "name": "Premier Anti-Aging",
+  "code": "4934"
+ },
+ {
+  "name": "Premium Group",
+  "code": "7199"
+ },
+ {
+  "name": "Press Kogyo",
+  "code": "7246"
+ },
+ {
+  "name": "Pressance",
+  "code": "3254"
+ },
+ {
+  "name": "Prestige International",
+  "code": "4290"
+ },
+ {
+  "name": "Property Data Bank",
+  "code": "4389"
+ },
+ {
+  "name": "Prored Partners",
+  "code": "7034"
+ },
+ {
+  "name": "Qol",
+  "code": "3034"
+ },
+ {
+  "name": "Raccoon",
+  "code": "3031"
+ },
+ {
+  "name": "Raksul",
+  "code": "4384"
+ },
+ {
+  "name": "rakumo",
+  "code": "4060"
+ },
+ {
+  "name": "Rakus",
+  "code": "3923"
+ },
+ {
+  "name": "Rakuten",
+  "code": "4755"
+ },
+ {
+  "name": "Recruit",
+  "code": "6098"
+ },
+ {
+  "name": "Relia",
+  "code": "4708"
+ },
+ {
+  "name": "Remixpoint",
+  "code": "3825"
+ },
+ {
+  "name": "Renesas Electronics",
+  "code": "6723"
+ },
+ {
+  "name": "Rengo",
+  "code": "3941"
+ },
+ {
+  "name": "Reprocell",
+  "code": "4978"
+ },
+ {
+  "name": "Resorttrust",
+  "code": "4681"
+ },
+ {
+  "name": "Rezil",
+  "code": "176A"
+ },
+ {
+  "name": "Ricksoft",
+  "code": "4429"
+ },
+ {
+  "name": "Ricoh",
+  "code": "7752"
+ },
+ {
+  "name": "Ride On Express",
+  "code": "6082"
+ },
+ {
+  "name": "Riken Keiki",
+  "code": "7734"
+ },
+ {
+  "name": "Ringer Hut",
+  "code": "8200"
+ },
+ {
+  "name": "Rinnai",
+  "code": "5947"
+ },
+ {
+  "name": "Rizap",
+  "code": "2928"
+ },
+ {
+  "name": "Rohm",
+  "code": "6963"
+ },
+ {
+  "name": "Rorze",
+  "code": "6323"
+ },
+ {
+  "name": "Royal Holdings",
+  "code": "8179"
+ },
+ {
+  "name": "Rozetta",
+  "code": "6182"
+ },
+ {
+  "name": "RPA Holdings",
+  "code": "6572"
+ },
+ {
+  "name": "RS Technologies",
+  "code": "3445"
+ },
+ {
+  "name": "Ryobi",
+  "code": "5851"
+ },
+ {
+  "name": "Ryohin Keikaku",
+  "code": "7453"
+ },
+ {
+  "name": "S-POOL",
+  "code": "2471"
+ },
+ {
+  "name": "Sakura Internet",
+  "code": "3778"
+ },
+ {
+  "name": "Samantha Thavasa",
+  "code": "7829"
+ },
+ {
+  "name": "Sanden",
+  "code": "6444"
+ },
+ {
+  "name": "Sanki Engineering",
+  "code": "1961"
+ },
+ {
+  "name": "Sankyo",
+  "code": "6417"
+ },
+ {
+  "name": "Sanrio",
+  "code": "8136"
+ },
+ {
+  "name": "Sansan",
+  "code": "4443"
+ },
+ {
+  "name": "Santen Pharmaceutical",
+  "code": "4536"
+ },
+ {
+  "name": "Sanwa Holdings",
+  "code": "5929"
+ },
+ {
+  "name": "Sanyo Chemical",
+  "code": "4471"
+ },
+ {
+  "name": "Sanyo Denki",
+  "code": "6516"
+ },
+ {
+  "name": "Sawai Pharmaceutical",
+  "code": "4555"
+ },
+ {
+  "name": "SBI Holdings",
+  "code": "8473"
+ },
+ {
+  "name": "SCREEN Holdings",
+  "code": "7735"
+ },
+ {
+  "name": "SCSK",
+  "code": "9719"
+ },
+ {
+  "name": "Secom",
+  "code": "9735"
+ },
+ {
+  "name": "Seed",
+  "code": "7743"
+ },
+ {
+  "name": "Sega Sammy",
+  "code": "6460"
+ },
+ {
+  "name": "Segue Group",
+  "code": "3968"
+ },
+ {
+  "name": "Seibu Giken",
+  "code": "6223"
+ },
+ {
+  "name": "Seika",
+  "code": "8061"
+ },
+ {
+  "name": "Seiko",
+  "code": "8050"
+ },
+ {
+  "name": "Seiren",
+  "code": "3569"
+ },
+ {
+  "name": "Senshu Electric",
+  "code": "9824"
+ },
+ {
+  "name": "SERAKU",
+  "code": "6199"
+ },
+ {
+  "name": "Seria",
+  "code": "2782"
+ },
+ {
+  "name": "Serverworks",
+  "code": "4434"
+ },
+ {
+  "name": "SHIFT",
+  "code": "3697"
+ },
+ {
+  "name": "Shikigaku",
+  "code": "7049"
+ },
+ {
+  "name": "Shikoku Kasei",
+  "code": "4099"
+ },
+ {
+  "name": "Shimadzu",
+  "code": "7701"
+ },
+ {
+  "name": "Shimamura",
+  "code": "8227"
+ },
+ {
+  "name": "Shimano",
+  "code": "7309"
+ },
+ {
+  "name": "Shin Maint",
+  "code": "6086"
+ },
+ {
+  "name": "Shin Nippon Air Technology",
+  "code": "6086"
+ },
+ {
+  "name": "Shindengen",
+  "code": "6844"
+ },
+ {
+  "name": "Shinko Electric Industries",
+  "code": "6967"
+ },
+ {
+  "name": "Shinmaywa Industries",
+  "code": "7224"
+ },
+ {
+  "name": "Ship Healthcare",
+  "code": "3360"
+ },
+ {
+  "name": "Shiseido",
+  "code": "4911"
+ },
+ {
+  "name": "Shofu",
+  "code": "7979"
+ },
+ {
+  "name": "Showa Shinku",
+  "code": "6384"
+ },
+ {
+  "name": "Signpost",
+  "code": "3996"
+ },
+ {
+  "name": "Silver Life",
+  "code": "9262"
+ },
+ {
+  "name": "Sinfonia Technology",
+  "code": "6507"
+ },
+ {
+  "name": "Sinko Industries",
+  "code": "6458"
+ },
+ {
+  "name": "Skylark",
+  "code": "3197"
+ },
+ {
+  "name": "Smaregi",
+  "code": "4431"
+ },
+ {
+  "name": "SMS",
+  "code": "2175"
+ },
+ {
+  "name": "Snow Peak",
+  "code": "7816"
+ },
+ {
+  "name": "Software Service",
+  "code": "3733"
+ },
+ {
+  "name": "Sogo Medical Holdings",
+  "code": "9277"
+ },
+ {
+  "name": "Sohgo Security Services",
+  "code": "2331"
+ },
+ {
+  "name": "Soiken",
+  "code": "2385"
+ },
+ {
+  "name": "Solasto",
+  "code": "6197"
+ },
+ {
+  "name": "Soliton Systems",
+  "code": "3040"
+ },
+ {
+  "name": "Soracom",
+  "code": "147A"
+ },
+ {
+  "name": "SpiderPlus",
+  "code": "4192"
+ },
+ {
+  "name": "SPRIX",
+  "code": "7030"
+ },
+ {
+  "name": "Star Mica Holdings",
+  "code": "2975"
+ },
+ {
+  "name": "Stella Chemifa",
+  "code": "4109"
+ },
+ {
+  "name": "StemCell Institute",
+  "code": "7096"
+ },
+ {
+  "name": "StemRIM",
+  "code": "4599"
+ },
+ {
+  "name": "Strike",
+  "code": "6196"
+ },
+ {
+  "name": "Sugi Holdings",
+  "code": "7649"
+ },
+ {
+  "name": "SUMCO",
+  "code": "3436"
+ },
+ {
+  "name": "Sumitomo Bakelite",
+  "code": "4203"
+ },
+ {
+  "name": "Sumitomo Osaka Cement",
+  "code": "5232"
+ },
+ {
+  "name": "Sumitomo Precision",
+  "code": "6355"
+ },
+ {
+  "name": "Sun Frontier",
+  "code": "8934"
+ },
+ {
+  "name": "Sun*",
+  "code": "4053"
+ },
+ {
+  "name": "SUNWELS",
+  "code": "9229"
+ },
+ {
+  "name": "System D",
+  "code": "3804"
+ },
+ {
+  "name": "System Research",
+  "code": "3771"
+ },
+ {
+  "name": "System Support",
+  "code": "4396"
+ },
+ {
+  "name": "Systena",
+  "code": "2317"
+ },
+ {
+  "name": "Syuppin",
+  "code": "3179"
+ },
+ {
+  "name": "T Hasegawa",
+  "code": "4958"
+ },
+ {
+  "name": "Tadano",
+  "code": "6395"
+ },
+ {
+  "name": "Taisho Pharmaceutical",
+  "code": "4581"
+ },
+ {
+  "name": "Taiyo Holdings",
+  "code": "4626"
+ },
+ {
+  "name": "Taiyo Yuden",
+  "code": "6976"
+ },
+ {
+  "name": "Take & Give Needs",
+  "code": "4331"
+ },
+ {
+  "name": "Takeuchi Manufacturing",
+  "code": "6432"
+ },
+ {
+  "name": "Tamron",
+  "code": "7740"
+ },
+ {
+  "name": "Tamura Corp",
+  "code": "6768"
+ },
+ {
+  "name": "Tanseisha",
+  "code": "9743"
+ },
+ {
+  "name": "Taoka Chemical",
+  "code": "4113"
+ },
+ {
+  "name": "Tateru",
+  "code": "1435"
+ },
+ {
+  "name": "TeamSpirit",
+  "code": "4397"
+ },
+ {
+  "name": "TEAR",
+  "code": "2485"
+ },
+ {
+  "name": "TechMatrix",
+  "code": "3762"
+ },
+ {
+  "name": "TechnoPro",
+  "code": "6028"
+ },
+ {
+  "name": "Teikoku Electric",
+  "code": "6333"
+ },
+ {
+  "name": "Temairazu",
+  "code": "2477"
+ },
+ {
+  "name": "Tenma",
+  "code": "7958"
+ },
+ {
+  "name": "Tenpo Innovation",
+  "code": "3484"
+ },
+ {
+  "name": "Terra Drone",
+  "code": "278A"
+ },
+ {
+  "name": "TerraSky",
+  "code": "3915"
+ },
+ {
+  "name": "THine Electronics",
+  "code": "6769"
+ },
+ {
+  "name": "TKC",
+  "code": "9746"
+ },
+ {
+  "name": "Toagosei",
+  "code": "4045"
+ },
+ {
+  "name": "Tobila Systems",
+  "code": "4441"
+ },
+ {
+  "name": "Toei Animation",
+  "code": "4816"
+ },
+ {
+  "name": "Toho Titanium",
+  "code": "5727"
+ },
+ {
+  "name": "Token",
+  "code": "1766"
+ },
+ {
+  "name": "Tokyo Dome",
+  "code": "9681"
+ },
+ {
+  "name": "Tokyo Electron",
+  "code": "8035"
+ },
+ {
+  "name": "Tokyo Energy & Systems",
+  "code": "1945"
+ },
+ {
+  "name": "Tokyo Keiki",
+  "code": "7721"
+ },
+ {
+  "name": "Tokyo Rope",
+  "code": "5981"
+ },
+ {
+  "name": "Tomoe Engineerin",
+  "code": "6309"
+ },
+ {
+  "name": "Tomy",
+  "code": "7867"
+ },
+ {
+  "name": "Topcon",
+  "code": "7732"
+ },
+ {
+  "name": "TOPPAN",
+  "code": "7911"
+ },
+ {
+  "name": "Topre",
+  "code": "5975"
+ },
+ {
+  "name": "Toridoll",
+  "code": "3397"
+ },
+ {
+  "name": "Torishima Pump",
+  "code": "6363"
+ },
+ {
+  "name": "Tosei",
+  "code": "8923"
+ },
+ {
+  "name": "TOTO",
+  "code": "5332"
+ },
+ {
+  "name": "TOWA",
+  "code": "6315"
+ },
+ {
+  "name": "Toyo Engineering",
+  "code": "6330"
+ },
+ {
+  "name": "Toyo Gosei",
+  "code": "4970"
+ },
+ {
+  "name": "Toyo Tanso",
+  "code": "5310"
+ },
+ {
+  "name": "Toyo Tire",
+  "code": "5105"
+ },
+ {
+  "name": "Transcosmos",
+  "code": "9715"
+ },
+ {
+  "name": "TRE Holdings",
+  "code": "9247"
+ },
+ {
+  "name": "Treasure Factory",
+  "code": "3093"
+ },
+ {
+  "name": "Trend Micro",
+  "code": "4704"
+ },
+ {
+  "name": "Tri Chemical Laboratories",
+  "code": "4369"
+ },
+ {
+  "name": "TRIAL",
+  "code": "141A"
+ },
+ {
+  "name": "TRUSCO NAKAYAMA",
+  "code": "9830"
+ },
+ {
+  "name": "TRYT",
+  "code": "9164"
+ },
+ {
+  "name": "Tsubaki Nakashima",
+  "code": "6464"
+ },
+ {
+  "name": "Tsubakimoto Chain",
+  "code": "6371"
+ },
+ {
+  "name": "Tsuburaya Fields",
+  "code": "2767"
+ },
+ {
+  "name": "Tsukui",
+  "code": "2398"
+ },
+ {
+  "name": "Tsumura & Co",
+  "code": "4540"
+ },
+ {
+  "name": "TWO STONE & Sons",
+  "code": "7352"
+ },
+ {
+  "name": "U-Shin",
+  "code": "6985"
+ },
+ {
+  "name": "Ubicom",
+  "code": "3937"
+ },
+ {
+  "name": "Uchida Yoko",
+  "code": "8057"
+ },
+ {
+  "name": "Ulvac",
+  "code": "6728"
+ },
+ {
+  "name": "Unicharm",
+  "code": "8113"
+ },
+ {
+  "name": "Unipres Corp",
+  "code": "5949"
+ },
+ {
+  "name": "United Arrows",
+  "code": "7606"
+ },
+ {
+  "name": "Unitika",
+  "code": "3103"
+ },
+ {
+  "name": "Usen-Next",
+  "code": "9418"
+ },
+ {
+  "name": "Ushio",
+  "code": "6925"
+ },
+ {
+  "name": "USS",
+  "code": "4732"
+ },
+ {
+  "name": "UT Group",
+  "code": "2146"
+ },
+ {
+  "name": "UUUM",
+  "code": "3990"
+ },
+ {
+  "name": "Uzabase",
+  "code": "3966"
+ },
+ {
+  "name": "V Technology",
+  "code": "7717"
+ },
+ {
+  "name": "V-cube",
+  "code": "3681"
+ },
+ {
+  "name": "Valor Holdings",
+  "code": "9956"
+ },
+ {
+  "name": "Valqua",
+  "code": "7995"
+ },
+ {
+  "name": "VALTES",
+  "code": "4442"
+ },
+ {
+  "name": "ValueCommerce",
+  "code": "2491"
+ },
+ {
+  "name": "Vision",
+  "code": "9416"
+ },
+ {
+  "name": "Visional",
+  "code": "4194"
+ },
+ {
+  "name": "VRAIN Solution",
+  "code": "135A"
+ },
+ {
+  "name": "VT Holdings",
+  "code": "7593"
+ },
+ {
+  "name": "W-Scope",
+  "code": "6619"
+ },
+ {
+  "name": "Wacom",
+  "code": "6727"
+ },
+ {
+  "name": "Wacul",
+  "code": "4173"
+ },
+ {
+  "name": "WATAMI",
+  "code": "7522"
+ },
+ {
+  "name": "WDB coco",
+  "code": "7079"
+ },
+ {
+  "name": "WDB Holdings",
+  "code": "2475"
+ },
+ {
+  "name": "WealthNavi",
+  "code": "7342"
+ },
+ {
+  "name": "Weathernews",
+  "code": "4825"
+ },
+ {
+  "name": "Welbe",
+  "code": "6556"
+ },
+ {
+  "name": "Welcia",
+  "code": "3141"
+ },
+ {
+  "name": "Wellnet",
+  "code": "2428"
+ },
+ {
+  "name": "West Holdings",
+  "code": "1407"
+ },
+ {
+  "name": "WILLs",
+  "code": "4482"
+ },
+ {
+  "name": "WingArc1st",
+  "code": "4432"
+ },
+ {
+  "name": "WirelessGate",
+  "code": "9419"
+ },
+ {
+  "name": "Workman",
+  "code": "7564"
+ },
+ {
+  "name": "World Holdings",
+  "code": "2429"
+ },
+ {
+  "name": "Writeup",
+  "code": "6580"
+ },
+ {
+  "name": "YA-MAN",
+  "code": "6630"
+ },
+ {
+  "name": "Yahoo! Japan",
+  "code": "4689"
+ },
+ {
+  "name": "Yakult",
+  "code": "2267"
+ },
+ {
+  "name": "Yellow Hat",
+  "code": "9882"
+ },
+ {
+  "name": "Yokowo",
+  "code": "6800"
+ },
+ {
+  "name": "Yonex",
+  "code": "7906"
+ },
+ {
+  "name": "Yoshinoya",
+  "code": "9861"
+ },
+ {
+  "name": "Yukiguni Maitake",
+  "code": "1375"
+ },
+ {
+  "name": "Yume no Machi",
+  "code": "2484"
+ },
+ {
+  "name": "Yumeshin",
+  "code": "2362"
+ },
+ {
+  "name": "Yushin Precision",
+  "code": "6482"
+ },
+ {
+  "name": "Zenkoku Hosho",
+  "code": "7164"
+ },
+ {
+  "name": "Zuiko",
+  "code": "6279"
+ }
+]

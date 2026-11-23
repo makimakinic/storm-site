@@ -1,0 +1,176 @@
+---
+// 全ページ共通の <head> と、本文の言語切り分け。
+import '../styles/global.css';
+import { SITE, type Lang } from '../site';
+import { localize } from '../lib/localize';
+import { ORGANIZATION } from '../lib/structured-data';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description: string;
+  path: string; // このページのURL（例 /ja/research/）
+  enPath: string;
+  jaPath: string;
+  ogImage: string;
+  bodyClass?: string;
+}
+const { lang, title, description, path, enPath, jaPath, ogImage, bodyClass } = Astro.props;
+
+// 公開設定なのにHubSpotのコードが入っていない場合は、ビルドを止めて知らせる
+if (SITE.indexable) {
+  const missing = Object.entries(SITE.hubspot.forms).filter(([, v]) => !v.trim()).map(([k]) => k);
+  if (!SITE.hubspot.trackingCode.trim()) missing.push('trackingCode');
+  if (missing.length) {
+    throw new Error(`src/site.ts: indexable が true ですが、HubSpotのコードが未設定です: ${missing.join(', ')}`);
+  }
+}
+
+const raw = await Astro.slots.render('default');
+const { html, faq } = localize(raw, lang);
+
+const abs = (p: string) => new URL(p, SITE.url).href;
+const ld: object[] = [ORGANIZATION];
+if (faq.length) {
+  ld.push({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    inLanguage: lang,
+    mainEntity: faq.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  });
+}
+---
+<!DOCTYPE html>
+<html lang={lang} data-l={lang}>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{title}</title>
+<meta name="description" content={description}>
+{!SITE.indexable && <meta name="robots" content="noindex, nofollow">}
+<link rel="canonical" href={abs(path)}>
+<link rel="alternate" hreflang="en" href={abs(enPath)}>
+<link rel="alternate" hreflang="ja" href={abs(jaPath)}>
+<link rel="alternate" hreflang="x-default" href={abs(enPath)}>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content={SITE.name}>
+<meta property="og:title" content={title}>
+<meta property="og:description" content={description}>
+<meta property="og:url" content={abs(path)}>
+<meta property="og:image" content={abs(ogImage)}>
+<meta property="og:locale" content={lang === 'ja' ? 'ja_JP' : 'en_GB'}>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@Storm_Research">
+{ld.map((o) => <script type="application/ld+json" set:html={JSON.stringify(o)} />)}
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<script is:inline>document.documentElement.classList.add('js');if(location.hash==='#coverage-research')document.documentElement.setAttribute('data-cov','research');</script>
+</head>
+<body class={bodyClass}>
+<Fragment set:html={html} />
+<Fragment set:html={SITE.hubspot.trackingCode} />
+<script>
+  // メニュー（スマホ）
+  const nav = document.getElementById('nav');
+  const menuBtn = document.querySelector('.menu-btn');
+  menuBtn?.addEventListener('click', () => {
+    const open = nav!.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', String(open));
+  });
+
+  // トップの登場アニメーション
+  setTimeout(() => document.body.classList.remove('intro'), 1500);
+
+  // スポンサードレポートの拡大表示
+  const zoom = document.getElementById('zoom') as HTMLDialogElement | null;
+  if (zoom) {
+    document.querySelectorAll('[data-zoom]').forEach((b) =>
+      b.addEventListener('click', () => {
+        try { zoom.showModal(); } catch { zoom.setAttribute('open', ''); }
+      }),
+    );
+    zoom.querySelector('.zoom-x')?.addEventListener('click', () => zoom.close());
+    zoom.addEventListener('click', (e) => { if (e.target === zoom) zoom.close(); });
+  }
+
+  // 見本フォーム（HubSpotの埋め込みコードを入れるまでの仮表示。送信はしない）
+  document.querySelectorAll<HTMLFormElement>('form[data-form]').forEach((f) =>
+    f.addEventListener('submit', (e) => {
+      e.preventDefault();
+      f.querySelector('.done')?.classList.add('show');
+    }),
+  );
+
+  // カバレッジ：タブ
+  const root = document.documentElement;
+  const tabs = document.querySelectorAll<HTMLAnchorElement>('.tab[data-tab]');
+  if (tabs.length) {
+    const show = (tab: string) => {
+      if (tab === 'research') root.setAttribute('data-cov', 'research');
+      else root.removeAttribute('data-cov');
+      tabs.forEach((t) => t.setAttribute('aria-selected', String(t.dataset.tab === tab)));
+    };
+    const fromHash = () => (location.hash === '#coverage-research' ? 'research' : 'corporate');
+    show(fromHash());
+    tabs.forEach((t) =>
+      t.addEventListener('click', (e) => {
+        e.preventDefault();
+        show(t.dataset.tab!);
+        history.replaceState(null, '', '#coverage-' + t.dataset.tab);
+      }),
+    );
+    window.addEventListener('hashchange', () => {
+      if (location.hash.startsWith('#coverage-')) show(fromHash());
+    });
+  }
+
+  // カバレッジ：検索
+  const q = document.getElementById('cov-q') as HTMLInputElement | null;
+  if (q) {
+    const ja = root.lang === 'ja';
+    const n = document.getElementById('cov-n')!;
+    const empty = document.getElementById('cov-empty')!;
+    const groups = [...document.querySelectorAll<HTMLElement>('.covgroup')];
+    const az = [...document.querySelectorAll<HTMLAnchorElement>('#cov-az a')];
+    const filter = () => {
+      const term = q.value.trim().toLowerCase();
+      let total = 0;
+      const visible = new Set<string>();
+      groups.forEach((g) => {
+        let c = 0;
+        g.querySelectorAll('li').forEach((li) => {
+          const hit = !term || (li.dataset.s ?? '').includes(term);
+          li.hidden = !hit;
+          if (hit) c++;
+        });
+        g.hidden = c === 0;
+        if (c) visible.add(g.dataset.letter!);
+        total += c;
+      });
+      az.forEach((a) => {
+        const on = visible.has(a.textContent!);
+        if (on) { a.setAttribute('href', '#cov-' + a.textContent); a.removeAttribute('aria-disabled'); }
+        else { a.removeAttribute('href'); a.setAttribute('aria-disabled', 'true'); }
+      });
+      n.textContent = ja ? total + '社' : total + ' companies';
+      empty.hidden = total > 0;
+    };
+    q.addEventListener('input', filter);
+    filter();
+    // A〜Z：URLを変えずに該当の頭文字までスクロール（試作と同じ動き）
+    document.getElementById('cov-az')!.addEventListener('click', (e) => {
+      const a = (e.target as Element).closest('a[href]');
+      if (!a) return;
+      e.preventDefault();
+      document.getElementById('cov-' + a.textContent)?.scrollIntoView({ behavior: 'smooth' });
+    });
+  }
+</script>
+</body>
+</html>

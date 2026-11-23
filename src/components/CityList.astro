@@ -1,0 +1,9 @@
+---
+// 地域ごとのロードショー都市一覧。data/roadshow-cities.json から作ります。
+import data from '../../data/roadshow-cities.json';
+---
+<dl class="citylist">
+{data.regions.map((r) => (
+  <div><dt><span class="en">{r.en}</span><span class="ja">{r.ja}</span></dt><dd><span class="en">{r.cities.map((c) => c.en).join(', ')}</span><span class="ja">{r.cities.map((c) => c.ja).join('、')}</span></dd></div>
+))}
+</dl>

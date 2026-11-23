@@ -1,0 +1,53 @@
+{
+ "_note": "ロードショー都市。都市を足すときは、該当する地域の cities に1行足す（英語名・日本語名・経度・緯度）。地図の点、地域ごとの都市数、都市一覧はこのファイルから自動で作られる。",
+ "japan_marker": [139.69, 35.69],
+ "regions": [
+  {
+   "en": "Europe", "ja": "欧州",
+   "label": {"x": 200, "y": 150, "anchor": "middle"},
+   "arc_to": [4, 50],
+   "cities": [
+    {"en": "London", "ja": "ロンドン", "lon": -0.13, "lat": 51.5},
+    {"en": "Edinburgh", "ja": "エジンバラ", "lon": -3.19, "lat": 55.95},
+    {"en": "Paris", "ja": "パリ", "lon": 2.35, "lat": 48.86},
+    {"en": "Frankfurt", "ja": "フランクフルト", "lon": 8.68, "lat": 50.11},
+    {"en": "Amsterdam", "ja": "アムステルダム", "lon": 4.9, "lat": 52.37},
+    {"en": "Geneva", "ja": "ジュネーブ", "lon": 6.14, "lat": 46.2},
+    {"en": "Zurich", "ja": "チューリッヒ", "lon": 8.54, "lat": 47.37},
+    {"en": "Liechtenstein", "ja": "リヒテンシュタイン", "lon": 9.52, "lat": 47.14},
+    {"en": "Stockholm", "ja": "ストックホルム", "lon": 18.07, "lat": 59.33}
+   ]
+  },
+  {
+   "en": "North America", "ja": "北米",
+   "label": {"x": 760, "y": 165, "anchor": "middle"},
+   "arc_to": [-90, 42],
+   "cities": [
+    {"en": "New York", "ja": "ニューヨーク", "lon": -74, "lat": 40.71},
+    {"en": "Boston", "ja": "ボストン", "lon": -71.06, "lat": 42.36},
+    {"en": "Chicago", "ja": "シカゴ", "lon": -87.63, "lat": 41.88},
+    {"en": "Toronto", "ja": "トロント", "lon": -79.38, "lat": 43.65},
+    {"en": "San Francisco", "ja": "サンフランシスコ", "lon": -122.42, "lat": 37.77},
+    {"en": "Salt Lake City", "ja": "ソルトレイクシティ", "lon": -111.89, "lat": 40.76}
+   ]
+  },
+  {
+   "en": "Asia", "ja": "アジア",
+   "label": {"x": 355, "y": 250, "anchor": "middle"},
+   "arc_to": [110, 12],
+   "cities": [
+    {"en": "Hong Kong", "ja": "香港", "lon": 114.17, "lat": 22.32},
+    {"en": "Singapore", "ja": "シンガポール", "lon": 103.82, "lat": 1.35}
+   ]
+  },
+  {
+   "en": "Australia", "ja": "オーストラリア",
+   "label": {"x": 560, "y": 375, "anchor": "start"},
+   "arc_to": [148, -35],
+   "cities": [
+    {"en": "Sydney", "ja": "シドニー", "lon": 151.21, "lat": -33.87},
+    {"en": "Melbourne", "ja": "メルボルン", "lon": 144.96, "lat": -37.81}
+   ]
+  }
+ ]
+}

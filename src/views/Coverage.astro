@@ -1,0 +1,66 @@
+---
+import { SITE } from '../site';
+import type { Lang } from '../site';
+import ClientList from '../components/ClientList.astro';
+import clients from '../../data/corporate-clients.json';
+import coverage from '../../data/research-coverage.json';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+
+// ストーム・リサーチの過去カバレッジ（data/research-coverage.json）を頭文字ごとに分ける
+const letter = (n: string) => (/[A-Z]/.test(n[0].toUpperCase()) ? n[0].toUpperCase() : '#');
+const groups: Record<string, { name: string; code: string }[]> = {};
+for (const r of coverage as { name: string; code: string }[]) (groups[letter(r.name)] ??= []).push(r);
+const letters = Object.keys(groups).sort();
+const AZ = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+const total = (coverage as unknown[]).length;
+---
+<div class="view on theme-research" id="v-coverage">
+  <section style="padding-bottom:32px">
+    <div class="wrap">
+      <div class="sec-head">
+        <h1><span class="en">Coverage</span><span class="ja">カバレッジ</span></h1>
+        <p class="lead"><span class="en">Two kinds of coverage: sponsored research on Storm Corporate clients, free to read, and the independent research Storm Research has published since 2009.</span><span class="ja">2種類のカバレッジがあります。誰でも読めるストーム・コーポレートのスポンサードレポートと、2009年以来ストーム・リサーチが発行してきた独自リサーチです。</span></p>
+      </div>
+      <div class="tabs" role="tablist">
+        <a href="/coverage/#coverage-corporate" role="tab" class="tab tab-c" data-tab="corporate" aria-selected="true"><span class="en">Storm Corporate · sponsored research</span><span class="ja">ストーム・コーポレート｜スポンサードレポート</span></a>
+        <a href="/coverage/#coverage-research" role="tab" class="tab tab-r" data-tab="research" aria-selected="false"><span class="en">Storm Research · research archive</span><span class="ja">ストーム・リサーチ｜過去のリサーチ</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="covpane" data-pane="corporate" style="padding-top:8px">
+    <div class="wrap">
+      <p class="covintro"><span class="en">Full reports on Storm Corporate clients, written directly in English by our analysts. Read them online, download the PDF or access them on Bloomberg.</span><span class="ja">ストーム・コーポレートのクライアント企業について、アナリストが英語で直接執筆したレポートです。ウェブ版のほか、PDFやBloombergでもご覧いただけます。</span></p>
+      <div class="latest" style="margin:0 0 32px">
+        <div class="code">4318</div>
+        <div><h3><span class="en">Latest: QUICK Co., Ltd. — Initiating coverage: Post-investment growth</span><span class="ja">最新レポート：株式会社クイック「Initiating coverage: Post-investment growth」</span></h3><p><span class="en">21 October 2026 · Professional services</span><span class="ja">2026年10月21日・専門サービス</span></p></div>
+        <div><a class="btn btn-accent" href={SITE.reportsSite + "/companies/4318/reports/2026-10-21-initiation/"}><span class="en">Read the report</span><span class="ja">レポートを読む</span></a></div>
+      </div>
+      <h2 style="font-size:1.4rem"><span class="en">Companies with Storm Corporate sponsored research</span><span class="ja">スポンサードレポート導入企業一覧</span> <span class="covn">({clients.length}<span class="ja">社</span><span class="en"> companies</span>)</span></h2>
+      <ClientList />
+      <p class="note"><span class="en">Sponsored research is paid for by the company covered. See each report for disclosures.</span><span class="ja">スポンサードレポートは、対象企業の依頼により作成しています。開示事項は各レポートをご覧ください。</span></p>
+    </div>
+  </section>
+
+  <section class="covpane" data-pane="research" style="padding-top:8px;padding-bottom:32px">
+    <div class="wrap">
+      <p class="covintro"><span class="en">Companies Storm Research has published reports on since 2009. Historical reports are available to professional investors on request.</span><span class="ja">2009年以来、ストーム・リサーチがレポートを発行してきた企業の一覧です。過去のレポートは、プロ投資家の方にご請求に応じて提供しています。</span></p>
+      <div class="covbar">
+        <label for="cov-q" class="sr"><span class="en">Search by company name or code</span><span class="ja">企業名・証券コードで検索</span></label>
+        <input id="cov-q" type="search" autocomplete="off" placeholder={lang === 'ja' ? '企業名・証券コードで検索（例：HENNGE、4475）' : 'Search by company name or code, e.g. HENNGE or 4475'}>
+        <span id="cov-n" class="covn" aria-live="polite">{lang === 'ja' ? `${total}社` : `${total} companies`}</span>
+      </div>
+      <nav class="az" id="cov-az" aria-label="A to Z">{AZ.map((L) => (groups[L] ? <a href={`#cov-${L}`}>{L}</a> : <a aria-disabled="true">{L}</a>))}</nav>
+    </div>
+  </section>
+  <section class="covpane" data-pane="research" style="padding-top:0">
+    <div class="wrap"><div id="cov-list" class="covlist">{letters.map((L) => (
+      <div class="covgroup" id={`cov-${L}`} data-letter={L}><h2>{L}</h2><ul>{groups[L].map((r) => (
+        <li data-s={`${r.name.toLowerCase()} ${r.code.toLowerCase()}`}>{r.name}<span>{r.code}</span></li>
+      ))}</ul></div>
+    ))}<p class="covempty" id="cov-empty" hidden><span class="en">No companies match. Try another name or code.</span><span class="ja">該当する企業が見つかりません。別の企業名または証券コードで検索してください。</span></p></div>
+      <p class="covcta"><span class="en">Want a report on one of these companies?</span><span class="ja">ご希望の企業のレポートがありますか？</span> <a class="btn btn-accent" href="/research/#research-trial"><span class="en">Request a historical report</span><span class="ja">過去レポートを請求</span></a></p>
+    </div>
+  </section>
+</div>

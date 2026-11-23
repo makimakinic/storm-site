@@ -1,0 +1,38 @@
+---
+import type { Lang } from '../site';
+import HubSpotForm from '../components/HubSpotForm.astro';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+---
+<div class="view on" id="v-contact">
+  <section>
+    <div class="wrap contact-grid">
+      <div>
+        <h1><span class="en">Contact us</span><span class="ja">お問い合わせ</span></h1>
+        <p class="lead"><span class="en">Investors and companies are both welcome. Tell us which you are and the right person will reply.</span><span class="ja">投資家の方も企業の方もお気軽にどうぞ。該当する担当者からご連絡いたします。</span></p>
+        <dl class="addr">
+          <dt><span class="en">Email</span><span class="ja">メール</span></dt><dd><a href="mailto:info@stormresearch.co.uk">info@stormresearch.co.uk</a></dd>
+          <dt><span class="en">Phone</span><span class="ja">電話</span></dt><dd><a href="tel:+441218159426">+44 (0)121 815 9426</a></dd>
+          <dt><span class="en">Office</span><span class="ja">所在地</span></dt><dd><span class="en">Burton upon Trent, United Kingdom</span><span class="ja">英国 バートン・アポン・トレント</span></dd>
+        </dl>
+      </div>
+      <HubSpotForm name="contact">
+      <form data-form>
+        <label for="g-type"><span class="en">I am</span><span class="ja">お問い合わせ者</span></label>
+        <select id="g-type">
+          <option class="en">An investor (Storm Research)</option><option class="en">A Japanese company (Storm Corporate)</option><option class="en">Other, including careers</option>
+          <option class="ja">投資家（ストーム・リサーチ）</option><option class="ja">日本企業（ストーム・コーポレート）</option><option class="ja">その他（採用など）</option>
+        </select>
+        <div class="row2">
+          <div><label for="g-name"><span class="en">Name</span><span class="ja">お名前</span></label><input id="g-name" required autocomplete="name"></div>
+          <div><label for="g-org"><span class="en">Organisation</span><span class="ja">会社名</span></label><input id="g-org" autocomplete="organization"></div>
+        </div>
+        <label for="g-email"><span class="en">Email</span><span class="ja">メールアドレス</span></label><input id="g-email" type="email" required autocomplete="email">
+        <label for="g-msg"><span class="en">Message</span><span class="ja">お問い合わせ内容</span></label><textarea id="g-msg" required></textarea>
+        <button class="btn btn-accent" type="submit"><span class="en">Send message</span><span class="ja">送信する</span></button>
+        <div class="done" role="status"><span class="en">Message sent. This is a design preview: on the live site this form will send to HubSpot.</span><span class="ja">送信しました。こちらはデザインのプレビューです。公開版ではこのフォームがHubSpotに送信されます。</span></div>
+      </form>
+      </HubSpotForm>
+    </div>
+  </section>
+</div>

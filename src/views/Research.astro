@@ -1,0 +1,140 @@
+---
+import type { Lang } from '../site';
+import HubSpotForm from '../components/HubSpotForm.astro';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+---
+<div class="view on theme-research" id="v-research">
+  <div class="phero photo">
+    <div class="wrap">
+      <img class="logo" src="/assets/research-white.png" alt="Storm Research">
+      <h1 class="tagline">All about ideas.</h1>
+      <p class="sub one"><span class="en">High-conviction ideas in under-researched Japanese equities.</span><span class="ja">カバレッジの薄い日本株から、確信度の高いアイデアを。</span></p>
+      <p><span class="en">Since 2009 we have served institutional investors worldwide<br class="pc">with detailed research on Japanese small and mid caps,<br class="pc">and the access to act on it.</span><span class="ja">2009年以来、海外機関投資家の皆様に、<br class="pc">日本の中小型株に関する詳細なリサーチと、<br class="pc">それを投資判断に活かすための企業アクセスを提供してきました。</span></p>
+      <div class="cta">
+        <a class="btn btn-light" href="/research/#research-free"><span class="en">Sign up free</span><span class="ja">無料で登録する</span></a>
+        <a class="btn btn-line" href="/coverage/"><span class="en">Browse our coverage</span><span class="ja">カバレッジ一覧を見る</span></a>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <h2><span class="en">Three ways we generate ideas for you</span><span class="ja">アイデアをお届けする3つの柱</span></h2>
+      </div>
+      <div class="pillars">
+        <div class="pillar">
+          <h3><span class="en">Recommended list</span><span class="ja">推奨銘柄リスト</span></h3>
+          <p><span class="en">A curated selection of around 25–30 high-conviction stocks for institutional portfolios, backed by comprehensive initiation reports and rigorous quarterly reassessments.</span><span class="ja">海外機関投資家のポートフォリオ向けに厳選した約25〜30の高確信度銘柄。詳細なイニシエーションレポートと四半期ごとの厳格な再評価でフォローします。</span></p>
+        </div>
+        <div class="pillar">
+          <h3><span class="en">Idea hunt</span><span class="ja">アイデアハント</span></h3>
+          <p><span class="en">Our "tyre-kicking" approach: a continuous, follow-your-nose search across all market caps and under-researched niches, positioned for the next 12–36 months.</span><span class="ja">「タイヤキッキング」と呼ぶ独自の手法。時価総額を問わず、カバレッジの薄いニッチ領域まで継続的に探索し、12〜36ヶ月先を見据えたアイデアを発掘します。</span></p>
+        </div>
+        <div class="pillar">
+          <h3><span class="en">Corporate access</span><span class="ja">企業アクセス</span></h3>
+          <p><span class="en">Meetings with CEOs, CFOs and IR heads of Japanese companies, in cities around the world and online. Subscribers get priority access.</span><span class="ja">日本企業のCEO・CFO・IR責任者とのミーティングを世界各地およびオンラインで開催。購読者の皆様は優先的にご参加いただけます。</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pale">
+    <div class="wrap sources">
+      <div class="orbit" aria-hidden="true">
+        <div class="ring"></div>
+        <div class="core"><span class="en">High-conviction ideas</span><span class="ja">高確信度の<br>アイデア</span></div>
+        <div class="node" style="left:50%;top:6%"><b><span class="en">News</span><span class="ja">ニュース</span></b><span class="en">& regulatory</span><span class="ja">・規制動向</span></div>
+        <div class="node" style="left:91%;top:38%"><b><span class="en">Clients</span><span class="ja">投資家</span></b><span class="en">Investor feedback</span><span class="ja">との対話</span></div>
+        <div class="node" style="left:76%;top:88%"><b><span class="en">Themes</span><span class="ja">市場テーマ</span></b><span class="en">Structural shifts</span><span class="ja">構造変化</span></div>
+        <div class="node" style="left:24%;top:88%"><b><span class="en">Analyst calls</span><span class="ja">アナリスト</span></b><span class="en">Direct check-ins</span><span class="ja">による取材</span></div>
+        <div class="node" style="left:9%;top:38%"><b><span class="en">Past reports</span><span class="ja">過去レポート</span></b><span class="en">Cyclical history</span><span class="ja">循環の分析</span></div>
+      </div>
+      <div>
+        <h2><span class="en">Where our ideas come from</span><span class="ja">アイデアの源泉</span></h2>
+        <p class="lead"><span class="en">Five sources feed a continuous search for the next idea, each one checked through detailed research before it reaches you.</span><span class="ja">5つの情報源から次のアイデアを継続的に探し、詳細なリサーチで裏付けたうえでお届けします。</span></p>
+        <ul class="slist">
+          <li><b><span class="en">No areas off-limits</span><span class="ja">対象に制限なし</span></b><span><span class="en">All market caps, including under-researched niches</span><span class="ja">時価総額を問わず、カバレッジの薄いニッチ領域まで</span></span></li>
+          <li><b><span class="en">Forward-looking</span><span class="ja">先を見据える</span></b><span><span class="en">Positioning for the coming 12–36 months</span><span class="ja">今後12〜36ヶ月を見据えたポジショニング</span></span></li>
+          <li><b><span class="en">A springboard for engagement</span><span class="ja">対話のきっかけに</span></b><span><span class="en">Every idea can lead to follow-up calls and site visits</span><span class="ja">フォローアップコールや企業訪問につなげます</span></span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <h2><span class="en">Ideas, and the access to act on them</span><span class="ja">アイデアと、それを活かすためのアクセス</span></h2>
+      </div>
+      <div class="svc">
+        <div><h3><span class="en">Analyst reports</span><span class="ja">アナリストレポート</span></h3><p><span class="en">Initiations and quarterly updates written directly in English.</span><span class="ja">英語で直接執筆するイニシエーションと四半期アップデート。</span></p></div>
+        <div><h3><span class="en">Back catalogue</span><span class="ja">バックカタログ</span></h3><p><span class="en">Research on over 800 companies, available on request.</span><span class="ja">800社超のリサーチを、ご依頼に応じて提供。</span></p></div>
+        <div><h3><span class="en">Pre-visit reports</span><span class="ja">訪問前レポート</span></h3><p><span class="en">Preparation notes before you meet Japanese companies.</span><span class="ja">日本企業とのミーティング前の準備資料。</span></p></div>
+        <div><h3><span class="en">1-on-1 analyst calls</span><span class="ja">アナリストとの1on1コール</span></h3><p><span class="en">Discuss specific stocks or sectors with our analysts.</span><span class="ja">個別銘柄やセクターについてアナリストと直接ディスカッション。</span></p></div>
+        <div><h3><span class="en">Interpreted calls</span><span class="ja">通訳付きコール</span></h3><p><span class="en">Calls with a Japanese company of your choice, with interpretation.</span><span class="ja">ご希望の日本企業との通訳付きコールを手配。</span></p></div>
+        <div><h3><span class="en">Research sales calls</span><span class="ja">リサーチセールスコール</span></h3><p><span class="en">Views on stocks, sectors and the market from our sales team.</span><span class="ja">個別銘柄・セクター・市場についてセールスチームが解説。</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="free" id="research-free">
+    <div class="wrap freegrid">
+      <div>
+        <h2><span class="en">Free for institutional investors</span><span class="ja">機関投資家の方は無料でご利用いただけます</span></h2>
+        <p class="lead"><span class="en">Sign up to receive our corporate reports on Japanese companies and invitations to corporate access meetings, at no cost.</span><span class="ja">日本企業のコーポレートレポートと、企業ミーティングへのご招待を無料でお届けします。</span></p>
+      </div>
+      <div class="freecta">
+        <ul class="inc" style="grid-template-columns:1fr;margin:0 0 24px;gap:12px">
+          <li><span class="en">Sponsored corporate reports, delivered to your inbox</span><span class="ja">スポンサードレポートをメールでお届け</span></li>
+          <li><span class="en">Invitations to meet Japanese management, in cities around the world and online</span><span class="ja">世界各地・オンラインでの経営陣ミーティングへのご招待</span></li>
+        </ul>
+        <a class="btn btn-accent" href="/research/#research-trial"><span class="en">Sign up free</span><span class="ja">無料で登録する</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head"><h2><span class="en">Frequently asked questions</span><span class="ja">よくあるご質問</span></h2></div>
+      <div class="faq">
+        <details><summary><span class="en">What does Storm Research do?</span><span class="ja">ストーム・リサーチは何をしている会社ですか？</span></summary><p><span class="en">Storm Research provides independent equity research on Japanese small and mid cap stocks to institutional investors worldwide. It was founded in the UK in 2009 and is authorised and regulated by the FCA.</span><span class="ja">ストーム・リサーチは、海外機関投資家に向けて、日本の中小型株に関する独立系の株式リサーチを提供しています。2009年に英国で設立され、英国金融行為規制機構（FCA）の認可・規制を受けています。</span></p></details>
+        <details><summary><span class="en">Which Japanese stocks do you cover?</span><span class="ja">どのような日本株をカバーしていますか？</span></summary><p><span class="en">We maintain a recommended list of around 25–30 high-conviction stocks and a back catalogue of research on more than 800 Japanese companies. We look across all market caps, with a focus on under-researched small and mid caps.</span><span class="ja">約25〜30銘柄の高確信度の推奨銘柄リストと、800社を超える日本企業のリサーチのバックカタログがあります。時価総額を問わず、特にアナリストのカバレッジが薄い中小型株に注力しています。</span></p></details>
+        <details><summary><span class="en">Can I meet Japanese company management through Storm?</span><span class="ja">ストームを通じて日本企業の経営陣と面談できますか？</span></summary><p><span class="en">Yes. We host meetings with CEOs, CFOs and heads of IR in cities around the world and online, and arrange interpreted calls with Japanese companies of your choice. Subscribers get priority access.</span><span class="ja">はい。世界各地およびオンラインでCEO・CFO・IR責任者とのミーティングを開催しているほか、ご希望の日本企業との通訳付きコールも手配します。購読者の皆様は優先的にご参加いただけます。</span></p></details>
+        <details><summary><span class="en">How do I get access to your research?</span><span class="ja">リサーチを利用するにはどうすればいいですか？</span></summary><p><span class="en">Professional investors can sign up free for our corporate reports and meeting invitations. For our proprietary research, contact us and we will arrange a call to discuss access.</span><span class="ja">プロ投資家の方は、コーポレートレポートと企業ミーティングのご案内を無料でご登録いただけます。独自リサーチのご利用については、お問い合わせいただければご相談のためのコールを手配します。</span></p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="research-trial">
+    <div class="wrap formbox">
+      <div>
+        <h2><span class="en">Sign up or get in touch</span><span class="ja">無料登録・お問い合わせ</span></h2>
+        <p class="lead"><span class="en">Tell us what you cover and what you are interested in. We will set up your access and arrange a call with an analyst.</span><span class="ja">ご担当の領域とご関心をお知らせください。<br class="pc">ご登録の手続きと、アナリストとのコールを手配します。</span></p>
+        <ul class="inc" style="grid-template-columns:1fr;margin-top:28px;gap:14px">
+          <li><span class="en">Sponsored corporate reports by email</span><span class="ja">スポンサードレポートのメール配信</span></li>
+          <li><span class="en">A call with one of our analysts</span><span class="ja">アナリストとのコール</span></li>
+          <li><span class="en">Our upcoming corporate meeting schedule</span><span class="ja">今後の企業ミーティング日程</span></li>
+        </ul>
+      </div>
+      <HubSpotForm name="research">
+      <form data-form>
+        <div class="row2">
+          <div><label for="r-name"><span class="en">Name</span><span class="ja">お名前</span></label><input id="r-name" required autocomplete="name"></div>
+          <div><label for="r-firm"><span class="en">Firm</span><span class="ja">会社名</span></label><input id="r-firm" required autocomplete="organization"></div>
+        </div>
+        <label for="r-email"><span class="en">Work email</span><span class="ja">メールアドレス</span></label><input id="r-email" type="email" required autocomplete="email">
+        <label for="r-int"><span class="en">I'm interested in</span><span class="ja">ご関心のある内容</span></label>
+        <select id="r-int">
+          <option class="en">Free corporate reports and meeting invitations</option><option class="en">Access to proprietary research</option><option class="en">A historical report from our coverage</option>
+          <option class="ja">無料のコーポレートレポート・ミーティング招待</option><option class="ja">独自リサーチのご利用</option><option class="ja">カバレッジの過去レポート</option>
+        </select>
+        <button class="btn btn-accent" type="submit"><span class="en">Send request</span><span class="ja">送信する</span></button>
+        <div class="done" role="status"><span class="en">Request received. This is a design preview: on the live site this form will send to HubSpot.</span><span class="ja">リクエストを受け付けました。こちらはデザインのプレビューです。公開版ではこのフォームがHubSpotに送信されます。</span></div>
+        <p class="note"><span class="en">For institutional and professional investors only.</span><span class="ja">機関投資家・プロ投資家の方を対象としています。</span></p>
+      </form>
+      </HubSpotForm>
+    </div>
+  </section>
+</div>

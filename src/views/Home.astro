@@ -1,0 +1,109 @@
+---
+import type { Lang } from '../site';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+---
+<div class="view on" id="v-home">
+  <div class="split">
+    <div class="half r">
+      <img class="logo" src="/assets/research-white.png" alt="Storm Research — All about ideas">
+      <div>
+        <div class="who"><span class="en">For institutional investors</span><span class="ja">海外機関投資家の皆様へ</span></div>
+        <h1>All about ideas.</h1>
+        <p class="sub"><span class="en">Ideas in Japanese small and mid caps<br class="pc">that the market hasn't found yet.</span><span class="ja">日本の中小型株から、<br class="pc">市場がまだ気づいていないアイデアを。</span></p>
+        <p><span class="en">A curated list of high-conviction ideas, a back catalogue of 800+ companies, and direct access to the management teams behind them.</span><span class="ja">厳選した高確信度の推奨銘柄、800社超のバックカタログ、そして経営陣と直接対話できる機会をご提供します。</span></p>
+        <div class="cta">
+          <a class="btn btn-light" href="/research/"><span class="en">See Storm Research</span><span class="ja">ストーム・リサーチを見る</span></a>
+          <a class="btn btn-line" href="/research/#research-free"><span class="en">Sign up free</span><span class="ja">無料で登録する</span></a>
+        </div>
+      </div>
+      <div class="kanji" aria-hidden="true">閃</div>
+    </div>
+    <div class="half c">
+      <img class="logo" src="/assets/corporate-white.png" alt="Storm Corporate — All about engagement">
+      <div>
+        <div class="who"><span class="en">For Japanese listed companies</span><span class="ja">日本の上場企業の皆様へ</span></div>
+        <h1>All about engagement.</h1>
+        <p class="sub"><span class="en">We bring your story to overseas investors,<br class="pc">instead of waiting for them to find you.</span><span class="ja">待つIRから、届けるIRへ。<br class="pc">積極的に海外投資家との接点をつくります。</span></p>
+        <p><span class="en lines"><span class="ln">English sponsored research distributed to 1,600+ overseas institutional investors,</span><span class="ln">followed up with 1-on-1 meetings and overseas roadshows.</span></span><span class="ja lines"><span class="ln">英文スポンサードレポートを1,600名以上の海外機関投資家へ配信し、</span><span class="ln">1on1ミーティングや海外ロードショーへとつなげます。</span></span></p>
+        <div class="cta">
+          <a class="btn btn-light" href="/corporate/"><span class="en">See Storm Corporate</span><span class="ja">ストーム・コーポレートを見る</span></a>
+          <a class="btn btn-line" href="/corporate/#corporate-contact"><span class="en">Book a free consultation</span><span class="ja">無料相談を予約</span></a>
+        </div>
+      </div>
+      <div class="kanji" aria-hidden="true">繋</div>
+    </div>
+  </div>
+
+  <div class="facts">
+    <div class="wrap">
+      <ul>
+        <li><b>2009</b><span class="en">Founded in the UK<br>UK-based</span><span class="ja">英国で創業<br>英国拠点</span></li>
+        <li><b>FCA</b><span class="en">Authorised and regulated</span><span class="ja">英国金融行為規制機構の認可・規制</span></li>
+        <li><b>800+</b><span class="en">Companies in our back catalogue</span><span class="ja">社のバックカタログ</span></li>
+        <li><b>1,600+</b><span class="en">Institutional investors in our network</span><span class="ja">名の海外機関投資家ネットワーク</span></li>
+        <li><b><span class="en">EN / JP</span><span class="ja">日英対応</span></b><span class="en">Japanese-English bilingual team</span><span class="ja">日本語・英語のバイリンガルチーム</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <h2><span class="en">Ideas for investors. Engagement for companies.</span><span class="ja">投資家にはアイデアを。企業にはエンゲージメントを。</span></h2>
+        <p class="lead bridge-lead"><span class="en lines"><span class="ln">Storm Research finds investment ideas in Japan for global investors.</span><span class="ln">Storm Corporate highlights Japanese companies' stories to those same investors and turns interest into meetings.</span></span><span class="ja lines"><span class="ln">ストーム・リサーチは、世界の投資家のために日本株のアイデアを見つけ出します。</span><span class="ln">ストーム・コーポレートは、その投資家ネットワークに日本企業のストーリーを届け、関心をミーティングへとつなげます。</span></span></p>
+      </div>
+      <div class="bridge">
+        <div class="side c">
+          <h3>All about engagement</h3>
+          <p><span class="en">Storm Corporate, for Japanese listed companies</span><span class="ja">ストーム・コーポレート｜日本の上場企業向け</span></p>
+          <ul>
+            <li><span class="en">Distribution of English sponsored research</span><span class="ja">英文スポンサードレポートの配信</span></li>
+            <li><span class="en">1-on-1 investor meetings</span><span class="ja">海外投資家との1on1ミーティング</span></li>
+            <li><span class="en">Overseas roadshows</span><span class="ja">海外ロードショー</span></li>
+            <li><span class="en">Investor feedback and IR consulting</span><span class="ja">投資家フィードバック・海外IRコンサルティング</span></li>
+          </ul>
+        </div>
+        <div class="hub"><span>STORM</span><em><span class="en">One investor network</span><span class="ja">ひとつの投資家ネットワーク</span></em></div>
+        <div class="side r">
+          <h3>All about ideas</h3>
+          <p><span class="en">Storm Research, for institutional investors</span><span class="ja">ストーム・リサーチ｜海外機関投資家向け</span></p>
+          <ul>
+            <li><span class="en">High-conviction recommended list</span><span class="ja">高確信度の推奨銘柄リスト</span></li>
+            <li><span class="en">Initiation reports and quarterly updates</span><span class="ja">イニシエーションレポートと四半期アップデート</span></li>
+            <li><span class="en">Analyst calls and corporate access</span><span class="ja">アナリストコール・企業面談</span></li>
+            <li><span class="en">Interpreted calls with Japanese companies</span><span class="ja">通訳付きの企業コール</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tint">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2><span class="en">Around 60 years of Japanese equity experience</span><span class="ja">合わせて約60年の日本株経験</span></h2>
+        <p class="lead"><span class="en">Our founders have worked on both the sell side and the buy side,<br class="pc">as analysts, fund managers and salespeople.</span><span class="ja">創業者はセルサイド・バイサイドの両方で、<br class="pc">アナリスト、ファンドマネージャー、営業として日本株に携わってきました。</span></p>
+      </div>
+      <div class="founders">
+        <div class="person">
+          <img src="/assets/rhiannon.jpg" alt="Rhiannon Ewart-White">
+          <div>
+            <h3>Rhiannon Ewart-White</h3>
+            <div class="role"><span class="en">Managing Director / Senior Analyst</span><span class="ja">代表取締役 / シニアアナリスト</span></div>
+            <p><span class="en">Began her career in 1997 as an analyst at Schroder Investment Management in Tokyo, then became Vice President, Japanese Equity Sales at ING Barings and Macquarie in Tokyo and London. She joined JK Investment Management in 2006 and founded Storm Research in July 2009.</span><span class="ja">1997年にシュローダー・インベストメント・マネジメント（東京）でアナリストとしてキャリアをスタート。INGベアリング証券、マッコーリー証券の東京・ロンドンで日本株セールスのヴァイス・プレジデントを務め、2006年にJKインベストメント・マネジメントへ。2009年7月にストーム・リサーチを設立。</span></p>
+          </div>
+        </div>
+        <div class="person">
+          <img src="/assets/rowan.jpg" alt="Rowan Ewart-White">
+          <div>
+            <h3>Rowan Ewart-White</h3>
+            <div class="role"><span class="en">Director / Sales</span><span class="ja">ディレクター / セールス</span></div>
+            <p><span class="en">Worked in Japanese equities at SG Warburg and Salomon Brothers, then at ING Barings and Macquarie in Tokyo and London, most recently as Head of UK Japanese Equity Sales. He joined GAM's Japan team as an Investment Manager in 2006 and joined Storm Research in June 2011.</span><span class="ja">SGウォーバーグ、ソロモン・ブラザーズを経て、INGベアリング証券、マッコーリー証券の東京・ロンドンで日本株セールスに従事し、英国日本株セールス責任者を務める。2006年にGAMの日本株チームにインベストメント・マネージャーとして加わり、2011年6月にストーム・リサーチに加入。</span></p>
+          </div>
+        </div>
+      </div>
+      <p style="margin-top:40px"><a class="btn btn-accent" href="/about/"><span class="en">About Storm Research</span><span class="ja">ストーム・リサーチについて</span></a></p>
+    </div>
+  </section>
+</div>

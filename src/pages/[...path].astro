@@ -1,0 +1,42 @@
+---
+// 7ページ × 英日 = 14ページをここで書き出します。ページの一覧は src/lib/pages.ts。
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ReportZoom from '../components/ReportZoom.astro';
+import { PAGES, pathFor, type PageDef } from '../lib/pages';
+import type { Lang } from '../site';
+
+export function getStaticPaths() {
+  return PAGES.flatMap((page) =>
+    (['en', 'ja'] as const).map((lang) => ({
+      params: { path: pathFor(page.slug, lang).replace(/^\/|\/$/g, '') || undefined },
+      props: { page, lang },
+    })),
+  );
+}
+
+const { page, lang } = Astro.props as { page: PageDef; lang: Lang };
+const View = page.view;
+const enPath = pathFor(page.slug, 'en');
+const jaPath = pathFor(page.slug, 'ja');
+---
+<Base
+  lang={lang}
+  title={page.title[lang]}
+  description={page.description[lang]}
+  path={lang === 'ja' ? jaPath : enPath}
+  enPath={enPath}
+  jaPath={jaPath}
+  ogImage={page.ogImage}
+  bodyClass={page.key === 'home' ? 'intro' : undefined}
+>
+<Header lang={lang} current={page.key} enPath={enPath} jaPath={jaPath} />
+
+<main>
+<View lang={lang} />
+</main>
+{page.key === 'corporate' && <ReportZoom />}
+
+<Footer />
+</Base>

@@ -1,0 +1,12 @@
+---
+// HubSpotフォームの置き場所。
+// src/site.ts の hubspot.forms に埋め込みコードが入っていればそれを表示し、
+// 空のあいだは中に書いた見本のフォーム（試作と同じ見た目）を表示します。
+import { SITE, type FormName } from '../site';
+interface Props {
+  name: FormName;
+}
+const { name } = Astro.props;
+const embed = SITE.hubspot.forms[name].trim();
+---
+{embed ? <div class="hs-embed" data-hs-form={name} set:html={embed} /> : <slot />}

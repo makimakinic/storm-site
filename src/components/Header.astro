@@ -1,0 +1,29 @@
+---
+import type { Lang } from '../site';
+interface Props {
+  lang: Lang;
+  current: string; // 'home' | 'research' | 'corporate' | 'coverage' | 'about' | 'careers' | 'contact'
+  enPath: string;
+  jaPath: string;
+}
+const { lang, current, enPath, jaPath } = Astro.props;
+const cur = (key: string) => (current === key ? 'page' : undefined);
+---
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="/" aria-label="Storm Research home"><img src="/assets/research-black.png" alt="Storm Research" style="width:170px;height:auto"><small><span class="en">Japanese equity specialists</span><span class="ja">日本株スペシャリスト</span></small></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav"><span class="en">Menu</span><span class="ja">メニュー</span></button>
+    <nav id="nav">
+      <a href="/research/" class="n-research" aria-current={cur('research')}><span class="en">For investors</span><span class="ja">投資家の皆様へ</span></a>
+      <a href="/corporate/" class="n-corporate" aria-current={cur('corporate')}><span class="en">For companies</span><span class="ja">企業の皆様へ</span></a>
+      <a href="/about/" aria-current={cur('about')}><span class="en">About us</span><span class="ja">会社紹介</span></a>
+      <a href="/careers/" aria-current={cur('careers')}><span class="en">Careers</span><span class="ja">採用</span></a>
+      <a href="/contact/" aria-current={cur('contact')}><span class="en">Contact</span><span class="ja">お問い合わせ</span></a>
+      <a href="/coverage/" class="nav-cov" aria-current={cur('coverage')}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l5 5v15H6V2zm8 1.5V8h4.5M9 12h8M9 15.5h8M9 19h5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><span class="en">Coverage</span><span class="ja">カバレッジ</span></a>
+      <div class="lang" role="group" aria-label="Language">
+        <a href={enPath} hreflang="en" lang="en" aria-label="English" aria-current={lang === 'en' ? 'true' : undefined}>EN</a>
+        <a href={jaPath} hreflang="ja" lang="ja" aria-label="日本語" aria-current={lang === 'ja' ? 'true' : undefined}>JP</a>
+      </div>
+    </nav>
+  </div>
+</header>

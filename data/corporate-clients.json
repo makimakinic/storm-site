@@ -1,0 +1,383 @@
+[
+ {
+  "code": "6436",
+  "name_en": "Amano",
+  "name_ja": "アマノ",
+  "report_page": false,
+  "logo": "logos/6436.png",
+  "logo_display_px": {
+   "w": 199,
+   "h": 37
+  }
+ },
+ {
+  "code": "8914",
+  "name_en": "Arealink",
+  "name_ja": "エリアリンク",
+  "report_page": false,
+  "logo": "logos/8914.png",
+  "logo_display_px": {
+   "w": 205,
+   "h": 35
+  }
+ },
+ {
+  "code": "8105",
+  "name_en": "Bitcoin Japan",
+  "name_ja": "Bitcoin Japan",
+  "report_page": false,
+  "logo": "logos/8105.png",
+  "logo_display_px": {
+   "w": 84,
+   "h": 90
+  },
+  "logo_nudge_up_px": 8
+ },
+ {
+  "code": "7685",
+  "name_en": "BuySell Technologies",
+  "name_ja": "バイセルテクノロジーズ",
+  "report_page": false,
+  "logo": "logos/7685.png",
+  "logo_display_px": {
+   "w": 129,
+   "h": 57
+  }
+ },
+ {
+  "code": "7912",
+  "name_en": "DNP",
+  "name_ja": "大日本印刷",
+  "report_page": false,
+  "logo": "logos/7912.png",
+  "logo_display_px": {
+   "w": 157,
+   "h": 47
+  }
+ },
+ {
+  "code": "4819",
+  "name_en": "Digital Garage",
+  "name_ja": "デジタルガレージ",
+  "report_page": false,
+  "logo": "logos/4819.png",
+  "logo_display_px": {
+   "w": 205,
+   "h": 26
+  }
+ },
+ {
+  "code": "2730",
+  "name_en": "EDION",
+  "name_ja": "エディオン",
+  "report_page": false,
+  "logo": "logos/2730.png",
+  "logo_display_px": {
+   "w": 143,
+   "h": 52
+  }
+ },
+ {
+  "code": "5246",
+  "name_en": "ELEMENTS",
+  "name_ja": "ELEMENTS",
+  "report_page": false,
+  "logo": "logos/5246.png",
+  "logo_display_px": {
+   "w": 190,
+   "h": 39
+  }
+ },
+ {
+  "code": "2931",
+  "name_en": "Euglena",
+  "name_ja": "ユーグレナ",
+  "report_page": false,
+  "logo": {
+   "en": "logos/2931-en.png",
+   "ja": "logos/2931-ja.png"
+  },
+  "logo_display_px": {
+   "en": {
+    "w": 159,
+    "h": 47
+   },
+   "ja": {
+    "w": 151,
+    "h": 49
+   }
+  }
+ },
+ {
+  "code": "4259",
+  "name_en": "ExaWizards",
+  "name_ja": "エクサウィザーズ",
+  "report_page": false,
+  "logo": "logos/4259.png",
+  "logo_display_px": {
+   "w": 205,
+   "h": 33
+  }
+ },
+ {
+  "code": "4662",
+  "name_en": "Focus Systems",
+  "name_ja": "フォーカスシステムズ",
+  "report_page": false,
+  "logo": "logos/4662.png",
+  "logo_display_px": {
+   "w": 205,
+   "h": 34
+  }
+ },
+ {
+  "code": "6814",
+  "name_en": "Furuno Electric",
+  "name_ja": "古野電気",
+  "report_page": false,
+  "logo": "logos/6814.png",
+  "logo_display_px": {
+   "w": 205,
+   "h": 17
+  }
+ },
+ {
+  "code": "277A",
+  "name_en": "Globe-ing",
+  "name_ja": "グロービング",
+  "report_page": false,
+  "logo": "logos/277A.png",
+  "logo_display_px": {
+   "w": 205,
+   "h": 29
+  }
+ },
+ {
+  "code": "3002",
+  "name_en": "Gunze",
+  "name_ja": "グンゼ",
+  "report_page": false,
+  "logo": "logos/3002.png",
+  "logo_display_px": {
+   "w": 190,
+   "h": 39
+  }
+ },
+ {
+  "code": "4475",
+  "name_en": "HENNGE",
+  "name_ja": "HENNGE",
+  "report_page": false,
+  "logo": "logos/4475.png",
+  "logo_display_px": {
+   "w": 190,
+   "h": 39
+  }
+ },
+ {
+  "code": "9889",
+  "name_en": "JBCC Holdings",
+  "name_ja": "JBCCホールディングス",
+  "report_page": false,
+  "logo": "logos/9889.png",
+  "logo_display_px": {
+   "w": 108,
+   "h": 68
+  }
+ },
+ {
+  "code": "3350",
+  "name_en": "Metaplanet",
+  "name_ja": "メタプラネット",
+  "report_page": false,
+  "logo": "logos/3350.png",
+  "logo_display_px": {
+   "w": 87,
+   "h": 88
+  },
+  "logo_nudge_up_px": 8
+ },
+ {
+  "code": "8897",
+  "name_en": "MIRARTH Holdings",
+  "name_ja": "MIRARTHホールディングス",
+  "report_page": false,
+  "logo": "logos/8897.png",
+  "logo_display_px": {
+   "w": 150,
+   "h": 49
+  }
+ },
+ {
+  "code": "3661",
+  "name_en": "m-up",
+  "name_ja": "エムアップ",
+  "report_page": false,
+  "logo": "logos/3661.png",
+  "logo_display_px": {
+   "w": 163,
+   "h": 46
+  }
+ },
+ {
+  "code": "9716",
+  "name_en": "Nomura",
+  "name_ja": "乃村工藝社",
+  "report_page": false,
+  "logo": "logos/9716.png",
+  "logo_display_px": {
+   "w": 205,
+   "h": 23
+  }
+ },
+ {
+  "code": "4377",
+  "name_en": "ONE CAREER",
+  "name_ja": "ワンキャリア",
+  "report_page": false,
+  "logo": "logos/4377.png",
+  "logo_display_px": {
+   "w": 205,
+   "h": 30
+  }
+ },
+ {
+  "code": "8016",
+  "name_en": "Onward Holdings",
+  "name_ja": "オンワードホールディングス",
+  "report_page": false,
+  "logo": "logos/8016.png",
+  "logo_display_px": {
+   "w": 205,
+   "h": 28
+  }
+ },
+ {
+  "code": "2154",
+  "name_en": "Open Up Group",
+  "name_ja": "オープンアップグループ",
+  "report_page": false,
+  "logo": "logos/2154.png",
+  "logo_display_px": {
+   "w": 157,
+   "h": 47
+  }
+ },
+ {
+  "code": "4165",
+  "name_en": "PLAID",
+  "name_ja": "プレイド",
+  "report_page": false,
+  "logo": "logos/4165.png",
+  "logo_display_px": {
+   "w": 183,
+   "h": 40
+  }
+ },
+ {
+  "code": "4318",
+  "name_en": "QUICK",
+  "name_ja": "クイック",
+  "report_page": true,
+  "logo": {
+   "en": "logos/4318-en.png",
+   "ja": "logos/4318-ja.png"
+  },
+  "logo_display_px": {
+   "en": {
+    "w": 196,
+    "h": 38
+   },
+   "ja": {
+    "w": 185,
+    "h": 40
+   }
+  }
+ },
+ {
+  "code": "3825",
+  "name_en": "Remixpoint",
+  "name_ja": "リミックスポイント",
+  "report_page": false,
+  "logo": "logos/3825.png",
+  "logo_display_px": {
+   "w": 205,
+   "h": 35
+  }
+ },
+ {
+  "code": "8739",
+  "name_en": "SPARX Group",
+  "name_ja": "スパークス・グループ",
+  "report_page": false,
+  "logo": {
+   "en": "logos/8739-en.png",
+   "ja": "logos/8739-ja.png"
+  },
+  "logo_display_px": {
+   "en": {
+    "w": 194,
+    "h": 38
+   },
+   "ja": {
+    "w": 204,
+    "h": 36
+   }
+  }
+ },
+ {
+  "code": "2676",
+  "name_en": "Takachiho Koheki",
+  "name_ja": "高千穂交易",
+  "report_page": false,
+  "logo": "logos/2676.png",
+  "logo_display_px": {
+   "w": 205,
+   "h": 31
+  }
+ },
+ {
+  "code": "6013",
+  "name_en": "Takuma",
+  "name_ja": "タクマ",
+  "report_page": false,
+  "logo": "logos/6013.svg",
+  "logo_display_px": {
+   "w": 205,
+   "h": 32
+  }
+ },
+ {
+  "code": "215A",
+  "name_en": "Timee",
+  "name_ja": "タイミー",
+  "report_page": false,
+  "logo": "logos/215A.png",
+  "logo_display_px": {
+   "w": 190,
+   "h": 39
+  }
+ },
+ {
+  "code": "7593",
+  "name_en": "VT Holdings",
+  "name_ja": "VTホールディングス",
+  "report_page": false,
+  "logo": "logos/7593.png",
+  "logo_display_px": {
+   "w": 205,
+   "h": 16
+  }
+ },
+ {
+  "code": "8008",
+  "name_en": "Yondoshi Holdings",
+  "name_ja": "ヨンドシーホールディングス",
+  "report_page": false,
+  "logo": "logos/8008.svg",
+  "logo_display_px": {
+   "w": 205,
+   "h": 32
+  }
+ }
+]

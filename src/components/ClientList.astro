@@ -1,0 +1,54 @@
+---
+// ストーム・コーポレート導入企業のカード。data/corporate-clients.json から作ります。
+// 企業を足すときはJSONに1社分を足し、ロゴを public/assets/logos/ に置きます。
+//  - logo_display_px：ロゴの表示サイズ（見た目の面積がそろうように計算した値）
+//  - logo_nudge_up_px があるロゴは少し上にずらす
+//  - 日英でロゴが違う場合は logo と logo_display_px を { "en": …, "ja": … } にする
+//  - report_page が true の企業は、レポートサイトの企業ページにリンクする
+import clients from '../../data/corporate-clients.json';
+import { SITE } from '../site';
+
+type Size = { w: number; h: number };
+type Client = {
+  code: string;
+  name_en: string;
+  name_ja: string;
+  report_page: boolean;
+  logo: string | { en: string; ja: string };
+  logo_display_px: Size | { en: Size; ja: Size };
+  logo_nudge_up_px?: number;
+};
+const list = clients as Client[];
+
+const logos = (c: Client) => {
+  if (typeof c.logo === 'string') {
+    return [{ src: c.logo, size: c.logo_display_px as Size, cls: undefined }];
+  }
+  const px = c.logo_display_px as { en: Size; ja: Size };
+  return (['en', 'ja'] as const).map((l) => ({ src: (c.logo as any)[l], size: px[l], cls: l }));
+};
+---
+<ul class="cclist">{list.map((c) => {
+  const inner = (
+    <Fragment>
+      <span class="cc-logo">{logos(c).map((g) => (
+        <img
+          class={[g.cls, c.logo_nudge_up_px ? 'lift' : null].filter(Boolean).join(' ') || undefined}
+          style={`width:${g.size.w}px;height:${g.size.h}px`}
+          src={`/assets/${g.src}`}
+          alt={`${c.name_en} logo`}
+        />
+      ))}</span>
+      <span class="cc-name">{c.name_en === c.name_ja ? c.name_en : <Fragment><span class="en">{c.name_en}</span><span class="ja">{c.name_ja}</span></Fragment>}</span>
+      <span class="cc-code">{c.code}</span>
+      {c.report_page
+        ? <span class="cc-go"><span class="en">View reports</span><span class="ja">レポートを見る</span></span>
+        : <span class="cc-go"><span class="en">Coming soon</span><span class="ja">準備中</span></span>}
+    </Fragment>
+  );
+  return (
+    <li>{c.report_page
+      ? <a class="cc" href={`${SITE.reportsSite}/companies/${c.code}/`}>{inner}</a>
+      : <div class="cc cc-soon">{inner}</div>}</li>
+  );
+})}</ul>

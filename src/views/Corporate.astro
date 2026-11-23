@@ -1,0 +1,239 @@
+---
+import { SITE } from '../site';
+import type { Lang } from '../site';
+import HubSpotForm from '../components/HubSpotForm.astro';
+import RoadshowMap from '../components/RoadshowMap.astro';
+import CityList from '../components/CityList.astro';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+---
+<div class="view on theme-corporate" id="v-corporate">
+  <div class="phero photo-c">
+    <div class="wrap" style="position:relative">
+      <img class="logo" src="/assets/corporate-white.png" alt="Storm Corporate">
+      <h1 class="tagline">All about engagement.</h1>
+      <p class="sub"><span class="en">Don't wait to be found.<br class="pc">We bring your story to overseas investors.</span><span class="ja">待つIRから、届けるIRへ。<br class="pc">貴社のストーリーを海外投資家へ届けます。</span></p>
+      <p><span class="en">Since 2019, 50+ Japanese listed companies have worked with us,<br class="pc">through English research distribution, 1-on-1 meetings and roadshows,<br class="pc">to engage new overseas institutional investors.</span><span class="ja">2019年のサービス開始以来、50社以上の日本の上場企業が、<br class="pc">英文レポートの配信・1on1ミーティング・ロードショーを通じて、<br class="pc">新たな海外機関投資家とのエンゲージメントを築いてきました。</span></p>
+      <div class="cta">
+        <a class="btn btn-light" href="/corporate/#corporate-contact"><span class="en">Book a free consultation</span><span class="ja">無料相談を予約</span></a>
+        <a class="btn btn-line" href="/corporate/#corporate-services"><span class="en">See our services</span><span class="ja">サービスを見る</span></a>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <h2><span class="en">The gap between companies and overseas investors</span><span class="ja">企業と海外投資家のあいだにある課題</span></h2>
+      </div>
+      <div class="gap">
+        <div>
+          <h3><span class="en">Companies tell us</span><span class="ja">企業の悩み</span></h3>
+          <ul>
+            <li><span class="en">There isn't enough English research or information about us</span><span class="ja">英文レポート・情報が不足している</span></li>
+            <li><span class="en">We have few touchpoints, so our story doesn't come across</span><span class="ja">接点が少なく、ストーリーが伝わりづらい</span></li>
+            <li><span class="en">We want our IR to be more efficient and effective</span><span class="ja">海外IR活動の効率・効果を上げたい</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3><span class="en">Investors tell us</span><span class="ja">投資家の悩み</span></h3>
+          <ul>
+            <li><span class="en">There is no regular, long-term English coverage</span><span class="ja">長期的・定期的な英語のカバレッジがない</span></li>
+            <li><span class="en">Their connection with the company is shallow</span><span class="ja">企業とのつながりが浅い</span></li>
+            <li><span class="en">Preparing for IR meetings takes too long</span><span class="ja">IRミーティングの準備が非効率</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="fixes">
+        <div class="fix"><div class="q"><span class="en">Not sure what overseas investors want to see</span><span class="ja">海外投資家に向けた効果的なアクションが分からない</span></div><div class="a"><span class="en">We suggest action points from an investor's view</span><span class="ja">海外投資家目線でアクションポイントを提案</span></div></div>
+        <div class="fix"><div class="q"><span class="en">Brokers aren't arranging meetings</span><span class="ja">証券会社による面談が入らず機会ロス</span></div><div class="a"><span class="en">We arrange meetings with new overseas investors</span><span class="ja">新規海外投資家との面談をアレンジ</span></div></div>
+        <div class="fix"><div class="q"><span class="en">Little feedback after meetings</span><span class="ja">面談後のフィードバックが少ない</span></div><div class="a"><span class="en">We collect detailed feedback after every meeting</span><span class="ja">面談後の細かいフィードバックを提供</span></div></div>
+        <div class="fix"><div class="q"><span class="en">Can't target long-term investors</span><span class="ja">長期的な投資家をターゲティングできない</span></div><div class="a"><span class="en">We target investors using report readership data</span><span class="ja">レポート閲覧データで投資家をターゲティング</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="push">
+    <div class="wrap">
+      <h2 style="margin-bottom:28px"><span class="en">Active outreach gets your story read</span><span class="ja">能動的なアプローチで、レポートが読まれる</span></h2>
+    </div>
+    <div class="wrap pushgrid">
+      <div>
+        <p class="lead"><span class="en">We actively approach institutional investors around roadshows and 1-on-1 meetings. Readership of client reports rises well beyond what publishing alone achieves.</span><span class="ja">ロードショーや1on1の機会に、私たちから海外機関投資家へ積極的にアプローチします。その結果、レポートを発行するだけの場合を大きく上回る閲覧数につながります。</span></p>
+        <ul class="pushlist">
+          <li><span class="en">Every report is distributed via Bloomberg, FactSet, AlphaSense, Capital IQ, LSEG and by direct email, with no distribution limit</span><span class="ja">すべてのレポートをBloomberg、FactSet、AlphaSense、Capital IQ、LSEG、ダイレクトメールで無制限に配信</span></li>
+          <li><span class="en">Our sales team highlights your report and results to investors directly</span><span class="ja">営業担当が投資家へ直接、レポートや決算をハイライト</span></li>
+          <li><span class="en">Our investor list grows daily, so readership rises even between IR events</span><span class="ja">投資家リストは日々拡大。海外IR活動のない期間も閲覧数の増加が見込めます</span></li>
+          <li><span class="en">Roadshows in North America, Europe, Asia and Australia</span><span class="ja">北米・欧州に加え、アジア・豪州でもロードショーを実施</span></li>
+        </ul>
+      </div>
+      <figure class="chart">
+        <figcaption><span class="en">Readership index, client companies</span><span class="ja">閲覧・注目度指数（弊社クライアント企業の比較）</span></figcaption>
+        <div class="chart-legend"><span class="k1"><span class="en">With active IR outreach (roadshows, 1-on-1s)</span><span class="ja">海外IR活動（ロードショー・1on1）実施あり</span></span><span class="k2"><span class="en">Sponsored report only</span><span class="ja">スポンサードレポート発行のみ</span></span></div>
+        <svg viewBox="0 0 640 300" role="img" aria-labelledby="pushchart-t" style="width:100%;height:auto;display:block">
+<title id="pushchart-t">Readership index, Sep 2023 to Dec 2025: companies with active IR outreach vs sponsored report only</title>
+<line x1="44" x2="624" y1="264.0" y2="264.0" stroke="#D9DEE3"/><text x="36" y="268.0" text-anchor="end" font-size="11" fill="#5A6672">200</text><line x1="44" x2="624" y1="202.0" y2="202.0" stroke="#D9DEE3"/><text x="36" y="206.0" text-anchor="end" font-size="11" fill="#5A6672">300</text><line x1="44" x2="624" y1="140.0" y2="140.0" stroke="#D9DEE3"/><text x="36" y="144.0" text-anchor="end" font-size="11" fill="#5A6672">400</text><line x1="44" x2="624" y1="78.0" y2="78.0" stroke="#D9DEE3"/><text x="36" y="82.0" text-anchor="end" font-size="11" fill="#5A6672">500</text><line x1="44" x2="624" y1="16.0" y2="16.0" stroke="#D9DEE3"/><text x="36" y="20.0" text-anchor="end" font-size="11" fill="#5A6672">600</text><text x="44.0" y="288" text-anchor="middle" font-size="11" fill="#5A6672">23/9</text><text x="108.4" y="288" text-anchor="middle" font-size="11" fill="#5A6672">23/12</text><text x="172.9" y="288" text-anchor="middle" font-size="11" fill="#5A6672">24/3</text><text x="237.3" y="288" text-anchor="middle" font-size="11" fill="#5A6672">24/6</text><text x="301.8" y="288" text-anchor="middle" font-size="11" fill="#5A6672">24/9</text><text x="366.2" y="288" text-anchor="middle" font-size="11" fill="#5A6672">24/12</text><text x="430.7" y="288" text-anchor="middle" font-size="11" fill="#5A6672">25/3</text><text x="495.1" y="288" text-anchor="middle" font-size="11" fill="#5A6672">25/6</text><text x="559.6" y="288" text-anchor="middle" font-size="11" fill="#5A6672">25/9</text><text x="624.0" y="288" text-anchor="middle" font-size="11" fill="#5A6672">25/12</text>
+<path d="M44.0,245.4 L108.4,217.5 L172.9,202.0 L237.3,189.6 L301.8,180.3 L366.2,183.4 L430.7,177.2 L495.1,177.2 L559.6,171.0 L624.0,167.9" fill="none" stroke="#A9B2BB" stroke-width="2.5" stroke-dasharray="6 5"/>
+<path d="M44.0,245.4 L108.4,217.5 L172.9,201.4 L237.3,171.0 L301.8,164.8 L366.2,47.0 L430.7,155.5 L495.1,102.8 L559.6,158.6 L624.0,146.2" fill="none" stroke="#932E3C" stroke-width="3"/><circle cx="44.0" cy="245.4" r="3.5" fill="#932E3C"/><circle cx="108.4" cy="217.5" r="3.5" fill="#932E3C"/><circle cx="172.9" cy="201.4" r="3.5" fill="#932E3C"/><circle cx="237.3" cy="171.0" r="3.5" fill="#932E3C"/><circle cx="301.8" cy="164.8" r="3.5" fill="#932E3C"/><circle cx="366.2" cy="47.0" r="3.5" fill="#932E3C"/><circle cx="430.7" cy="155.5" r="3.5" fill="#932E3C"/><circle cx="495.1" cy="102.8" r="3.5" fill="#932E3C"/><circle cx="559.6" cy="158.6" r="3.5" fill="#932E3C"/><circle cx="624.0" cy="146.2" r="3.5" fill="#932E3C"/>
+<text x="374.2" y="51.0" font-size="12" fill="#932E3C" font-weight="700">550</text>
+</svg>
+      </figure>
+    </div>
+  </section>
+
+  <section class="pale">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2><span class="en">Why overseas IR matters now</span><span class="ja">いま海外IRが重要な理由</span></h2>
+      </div>
+      <div class="why">
+        <div class="big"><strong>~60%</strong><p><span class="en">Overseas investors made up around 60% of Japanese equity trading value in 2023. Funds flow to the companies whose information reaches them.</span><span class="ja">2023年時点で、海外投資家は株式売買金額の約60％を占めています。投資資金は、情報が届く企業に集中します。</span></p></div>
+        <div><h3><span class="en">Less broker research since MiFID II</span><span class="ja">MiFID II以降、証券会社のリサーチが減少</span></h3><p><span class="en">Since research was unbundled in 2018, broker coverage has concentrated on large caps. Smaller companies need to publish in English themselves.</span><span class="ja">2018年のリサーチと取引手数料の分離以降、証券会社のカバレッジは大型株中心に。中小型企業は自ら英文で発信する必要があります。</span></p></div>
+        <div><h3><span class="en">The TSE's call for capital-aware management</span><span class="ja">東証による「資本コストや株価を意識した経営」の要請</span></h3><p><span class="en">The exchange and government are asking companies to build constructive dialogue with investors.</span><span class="ja">取引所・政府は、投資家と建設的な議論ができる好循環づくりを企業に求めています。</span></p></div>
+        <div><h3><span class="en">Active IR is now rewarded</span><span class="ja">海外IRの積極性が評価される時代へ</span></h3><p><span class="en">The quality of IR increasingly links to share price and cost of capital.</span><span class="ja">海外IR活動の質が、株価や資本コストに直結するようになっています。</span></p></div>
+        <div><h3><span class="en">Competition for global capital</span><span class="ja">グローバルな資金獲得競争</span></h3><p><span class="en">Other Asian companies are strengthening their IR too. Being found takes a proactive approach.</span><span class="ja">他のアジア企業も海外IRを強化しています。見つけてもらうには能動的なアプローチが不可欠です。</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="corporate-services">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2><span class="en">Five steps to engagement</span><span class="ja">エンゲージメントへの5つのステップ</span></h2>
+        <p class="lead"><span class="en">Start with a single service or combine them. Each step builds on the one before.</span><span class="ja">ひとつのサービスから始めることも、組み合わせることもできます。</span></p>
+      </div>
+      <ol class="steps">
+        <li><h3><span class="en">Sponsored report</span><span class="ja">スポンサードレポート</span></h3><p><span class="en">An initiation report written directly in English by Japanese equity analysts, updated every quarter and checked by an editor with fund-manager experience.</span><span class="ja">日本株専門のアナリストが直接英語で執筆。ファンドマネージャー経験のあるエディターがチェックし、四半期ごとに更新します。</span></p></li>
+        <li><h3><span class="en">Translation and nuance check</span><span class="ja">英訳・ニュアンスチェック</span></h3><p><span class="en">Concise, accurate English for your materials and website, with the right terminology and tone.</span><span class="ja">海外向けIR資料やウェブサイトを、専門用語やニュアンスまで的確な、簡潔でインパクトのある英語に。</span></p></li>
+        <li><h3><span class="en">1-on-1 investor meetings</span><span class="ja">海外投資家1on1ミーティング</span></h3><p><span class="en">We target investors using readership data, request meetings at times that suit you and collect feedback afterwards.</span><span class="ja">閲覧データをもとに投資家をターゲティングし、ご希望の日時で面談を依頼。面談後はフィードバックを収集します。</span></p><span class="tag"><span class="en">Success fee · no annual contract</span><span class="ja">成功報酬型・年間契約なし</span></span></li>
+        <li><h3><span class="en">Overseas roadshows</span><span class="ja">海外ロードショー</span></h3><p><span class="en">Full itinerary, meeting setup, on-site attendance and interpreters. For example, 12 meetings in 4 days across London, Edinburgh, Paris and Frankfurt.</span><span class="ja">全行程のアレンジ、面談設定、現地アテンド・通訳手配まで。例：4日間でロンドン・エジンバラ・パリ・フランクフルトの12社と面談。</span></p><span class="tag"><span class="en">No annual contract</span><span class="ja">年間契約なし</span></span></li>
+        <li><h3><span class="en">Consulting</span><span class="ja">コンサルティング</span></h3><p><span class="en">A senior analyst reviews your position, delivers an investor-focused analysis report and proposes messaging by investor type.</span><span class="ja">シニアアナリストが現状を分析し、投資家視点の分析レポートと投資家タイプ別のメッセージングを提案します。</span></p></li>
+      </ol>
+      <div class="extra">
+        <div><h3><span class="en">Readership dashboard</span><span class="ja">データダッシュボード</span></h3><p><span class="en">See who is reading your report by country, investor type and firm, so you can judge return on investment.</span><span class="ja">国・投資家タイプ・会社別にレポートの閲覧状況を可視化し、費用対効果を確認できます。</span></p></div>
+        <div><h3><span class="en">Investor feedback</span><span class="ja">投資家フィードバック</span></h3><p><span class="en">Candid comments collected after every meeting, translated and shared with you to improve your next engagement.</span><span class="ja">面談ごとに率直なコメントを収集・翻訳して共有し、次のエンゲージメントの改善に活かします。</span></p></div>
+        <div><h3><span class="en">IR insight and seminars</span><span class="ja">IRインサイト・セミナー</span></h3><p><span class="en">Storm IR Insight, a monthly market intelligence report, and IR support seminars for companies.</span><span class="ja">「ストームIRインサイト」、月刊マーケットインテリジェンス、海外IR支援セミナーを企業様向けに提供しています。</span></p></div>
+      </div>
+      <div class="latest">
+        <div class="code">4318</div>
+        <div><h3><span class="en">Read a sponsored report: QUICK Co., Ltd.</span><span class="ja">スポンサードレポートの実例：株式会社クイック</span></h3><p><span class="en">Initiating coverage, 21 October 2026. Published online, as a PDF and on Bloomberg.</span><span class="ja">イニシエーションレポート（2026年10月21日）。ウェブ版・PDF・Bloombergで配信しています。</span></p></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-accent" href={SITE.reportsSite + "/companies/4318/reports/2026-10-21-initiation/"}><span class="en">Read the report</span><span class="ja">レポートを読む</span></a><a class="btn" style="border-color:var(--wine);color:var(--wine)" href="/coverage/#coverage-corporate"><span class="en">All sponsored research</span><span class="ja">スポンサードレポート一覧</span></a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dual">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2><span class="en">One report, two audiences</span><span class="ja">英文と日本語、2つのレポートで国内外へ</span></h2>
+        <p class="lead"><span class="en">Alongside the English report for overseas institutional investors, we produce a Japanese version for investors in Japan.</span><span class="ja">海外機関投資家向けの英文レポートに加えて、<br class="pc">国内の投資家向けに日本語版のレポートも作成します。</span></p>
+      </div>
+      <div class="dualgrid">
+        <div class="dcard">
+          <div class="dlang">EN</div>
+          <h3><span class="en">English report</span><span class="ja">英文レポート</span></h3>
+          <p class="dfor"><span class="en">For overseas institutional investors</span><span class="ja">海外機関投資家向け</span></p>
+          <p><span class="en">Written directly in English by our analysts and distributed to 1,600+ overseas institutional investors via Bloomberg, FactSet, AlphaSense, Capital IQ, LSEG and direct email.</span><span class="ja">アナリストが直接英語で執筆し、Bloomberg、FactSet、AlphaSense、Capital IQ、LSEG、ダイレクトメールで1,600名以上の海外機関投資家へ配信します。</span></p>
+        </div>
+        <div class="dcard">
+          <div class="dlang">JP</div>
+          <h3><span class="en">Japanese report</span><span class="ja">日本語レポート</span></h3>
+          <p class="dfor"><span class="en">For investors in Japan</span><span class="ja">国内投資家向け</span></p>
+          <p><span class="en">Published on Kabutan (株探), one of Japan's most widely read stock information sites, so your equity story also reaches domestic investors.</span><span class="ja">国内有数の株式情報サイト「株探（かぶたん）」に掲載し、国内の投資家にも貴社のエクイティ・ストーリーを届けます。</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tint">
+    <div class="wrap showcase">
+      <figure><img src="/assets/dashboard.jpg" alt="Illustration of the Storm Corporate readership dashboard, with data blurred"><figcaption class="note" style="padding:8px 12px;margin:0;background:#fff"><span class="en">Illustration only. Client data is blurred.</span><span class="ja">イメージです。クライアントのデータはぼかしています。</span></figcaption></figure>
+      <div>
+        <h2><span class="en">Know which investors are interested before you meet them</span><span class="ja">面談の前に、関心を持つ投資家が分かる</span></h2>
+        <p class="lead"><span class="en">Readership data shows which investors are interested, guides who to meet and what to discuss, and comes with comments from our analysts.</span><span class="ja">閲覧データから投資家の関心を把握し、誰と会い何を話すべきかを判断できます。アナリストのコメントも併せてお届けします。</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <h2><span class="en">A global network of 1,600+ institutional investors</span><span class="ja">1,600名以上の海外機関投資家ネットワーク</span></h2>
+        <p class="lead"><span class="en">We add investors to our list every day, so readership grows even between IR events.</span><span class="ja">投資家リストは日々拡大しており、海外IR活動を実施していない期間も閲覧数の増加が見込めます。</span></p>
+      </div>
+      <RoadshowMap />
+      <div class="kpis kpis4">
+        <div><b>1,600+</b><span><span class="en">Registered institutional investors</span><span class="ja">名の登録海外機関投資家</span></span></div>
+        <div><b>8–10</b><span><span class="en">Overseas roadshows arranged each year</span><span class="ja">年間の海外ロードショー</span></span></div>
+        <div><b>100+</b><span><span class="en">1-on-1 meetings with overseas investors each year</span><span class="ja">年間の海外投資家1on1面談</span></span></div>
+        <div><b>50+</b><span><span class="en">Corporate clients since 2019</span><span class="ja">2019年以来の企業クライアント</span></span></div>
+      </div>
+      <CityList />
+    </div>
+  </section>
+
+  <section class="pale">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2><span class="en">Investor feedback after every meeting</span><span class="ja">面談のたびに届く、投資家フィードバック</span></h2>
+        <p class="lead"><span class="en">After each meeting we collect candid comments from investors, translate them and share them with you. Overseas investors say directly what Japanese investors often leave unsaid.</span><span class="ja">面談のあとには投資家から率直なコメントを集め、翻訳して共有します。海外投資家は、国内では聞きにくい改善点や課題もストレートに伝えてくれます。</span></p>
+      </div>
+      <div class="effects">
+        <div><h3><span class="en">Know how investors see you</span><span class="ja">投資家からの評価を把握</span></h3><p><span class="en">Understand how your story, strategy and management come across to overseas funds.</span><span class="ja">貴社のストーリーや戦略、経営陣が海外投資家にどう受け止められているかが分かります。</span></p></div>
+        <div><h3><span class="en">Find the barriers to investing</span><span class="ja">投資へのバリアを発見</span></h3><p><span class="en">Learn what is stopping investors from buying, from capital allocation to the credibility of targets.</span><span class="ja">資本配分や目標の実現性など、投資をためらう理由が具体的に見えてきます。</span></p></div>
+        <div><h3><span class="en">Become more attractive to investors</span><span class="ja">投資家への魅力度を向上</span></h3><p><span class="en">Use the feedback to improve your materials and messaging before the next meeting or roadshow.</span><span class="ja">フィードバックを資料やメッセージの改善に活かし、次の面談やロードショーにつなげられます。</span></p></div>
+      </div>
+      <h3 style="margin:56px 0 4px"><span class="en">Examples of investor feedback</span><span class="ja">投資家フィードバックの例</span></h3>
+      <div class="feedback">
+        <p><span class="en">A clear view on how free cash flow will be used once growth slows would make the company more attractive to long-term holders.</span><span class="ja">成長が難しくなった時点でフリーキャッシュフローをどう使うかについて明確な考えがあれば、長期保有の投資家にとってより魅力的になると思う。</span></p>
+        <p><span class="en">The ambitious mid-term guidance was good. More detail on how it will be achieved would help us judge how realistic it is.</span><span class="ja">意欲的な中期ガイダンスは良かった。どう実現されるかについてより詳細な情報があれば、実現可能性を測るのに役立つ。</span></p>
+        <p><span class="en">I wanted more discussion of capital allocation and payout ratio in the meeting.</span><span class="ja">ミーティングでは、もっと資本配分と配当性向についてディスカッションが欲しかった。</span></p>
+        <p><span class="en">Hearing management explain the basis for their long-term targets directly on the roadshow was very helpful.</span><span class="ja">野心的な中長期目標について、ロードショーで経営陣から直接数字の根拠を説明してもらえたのはとても参考になった。</span></p>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head"><h2><span class="en">Frequently asked questions</span><span class="ja">よくあるご質問</span></h2></div>
+      <div class="faq">
+        <details><summary><span class="en">What is Storm Corporate?</span><span class="ja">ストーム・コーポレートとは何ですか？</span></summary><p><span class="en">Storm Corporate is the investor relations support service of Storm Research for Japanese listed companies, launched in 2019. It highlights companies' stories to overseas institutional investors through English sponsored research, 1-on-1 meetings and overseas roadshows.</span><span class="ja">ストーム・コーポレートは、ストーム・リサーチが2019年に開始した、日本の上場企業向けの海外IR支援サービスです。英文スポンサードレポート、1on1ミーティング、海外ロードショーを通じて、企業のストーリーを海外機関投資家へ届けます。</span></p></details>
+        <details><summary><span class="en">What is a sponsored research report?</span><span class="ja">スポンサードレポートとは何ですか？</span></summary><p><span class="en">A sponsored report is an English research report on your company, commissioned by you and written directly in English by our Japanese equity analysts. It starts with an initiation report and is updated every quarter, then distributed to investors without limit.</span><span class="ja">スポンサードレポートとは、企業様からのご依頼で、日本株専門のアナリストが直接英語で執筆する貴社のリサーチレポートです。導入時のイニシエーションレポートから始まり、四半期ごとに更新し、投資家へ無制限に配信します。</span></p></details>
+        <details><summary><span class="en">Do you also publish reports in Japanese?</span><span class="ja">日本語のレポートもありますか？</span></summary><p><span class="en">Yes. Alongside the English report for overseas institutional investors, we produce a Japanese version and publish it on Kabutan (株探) for investors in Japan.</span><span class="ja">はい。海外機関投資家向けの英文レポートに加えて日本語版も作成し、国内投資家向けに「株探（かぶたん）」に掲載します。</span></p></details>
+        <details><summary><span class="en">How are 1-on-1 investor meetings charged?</span><span class="ja">1on1ミーティングの料金体系は？</span></summary><p><span class="en">1-on-1 meetings with overseas investors are charged on a success-fee basis, with no annual contract.</span><span class="ja">海外投資家との1on1ミーティングは成功報酬型で、年間契約は不要です。</span></p></details>
+        <details><summary><span class="en">Which investors can you reach?</span><span class="ja">どのような投資家にリーチできますか？</span></summary><p><span class="en">Our network includes more than 1,600 registered institutional investors across North America, Asia, Europe and Australia, covering multi-style, growth, value, hedge and ESG funds. We arrange 8–10 overseas roadshows and more than 100 overseas 1-on-1 meetings a year.</span><span class="ja">北米・アジア・欧州・オーストラリアの1,600名以上の海外機関投資家が登録しており、マルチスタイル、グロース、バリュー、ヘッジ、ESGなど幅広いファンドが含まれます。年間8〜10本の海外ロードショーと100件以上の海外1on1面談をアレンジしています。</span></p></details>
+        <details><summary><span class="en">Can we work with you in Japanese?</span><span class="ja">日本語で相談できますか？</span></summary><p><span class="en">Yes. Our team includes native and fluent Japanese speakers, and we work with Japanese companies in Japanese.</span><span class="ja">はい。日本語ネイティブまたは日本語が堪能なメンバーが在籍しており、日本語でご対応いたします。</span></p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="tint" id="corporate-contact">
+    <div class="wrap formbox">
+      <div>
+        <h2><span class="en">Start engaging overseas investors</span><span class="ja">海外投資家とのエンゲージメントを始めませんか</span></h2>
+        <p class="lead"><span class="en">Tell us about your IR goals. We will suggest where to start, whether that's a sponsored report, investor meetings or a roadshow.</span><span class="ja">海外IRの目標や課題をお聞かせください。スポンサードレポート、海外機関投資家とのミーティング、ロードショーなど、最適な始め方をご提案します。</span></p>
+        <p><span class="en">Our Japanese-speaking team will respond in Japanese.</span><span class="ja">日本語でご対応いたします。</span></p>
+        <button type="button" class="repthumb" data-zoom aria-label="Enlarge the example sponsored report"><img src="/assets/report.jpg" alt="Example Storm Corporate sponsored report"><span class="zoomhint"><span class="en">Click to enlarge</span><span class="ja">クリックで拡大</span></span></button>
+        <p class="note" style="margin-top:12px"><span class="en">Example sponsored report.</span><span class="ja">スポンサードレポートの例です。</span> <a href={SITE.reportsSite + "/companies/4318/reports/2026-10-21-initiation/"} style="color:var(--wine);font-weight:700"><span class="en">Read a full report online</span><span class="ja">ウェブ版のレポートを読む</span></a></p>
+      </div>
+      <HubSpotForm name="corporate">
+      <form data-form>
+        <div class="row2">
+          <div><label for="c-name"><span class="en">Name</span><span class="ja">お名前</span></label><input id="c-name" required autocomplete="name"></div>
+          <div><label for="c-co"><span class="en">Company (and ticker)</span><span class="ja">会社名（証券コード）</span></label><input id="c-co" required autocomplete="organization"></div>
+        </div>
+        <label for="c-email"><span class="en">Email</span><span class="ja">メールアドレス</span></label><input id="c-email" type="email" required autocomplete="email">
+        <label for="c-int"><span class="en">Service of interest</span><span class="ja">ご関心のあるサービス</span></label>
+        <select id="c-int">
+          <option class="en">Sponsored report</option><option class="en">1-on-1 investor meetings</option><option class="en">Overseas roadshow</option><option class="en">Translation</option><option class="en">Consulting</option><option class="en">Not sure yet</option>
+          <option class="ja">スポンサードレポート</option><option class="ja">1on1ミーティング</option><option class="ja">海外ロードショー</option><option class="ja">英訳・校正</option><option class="ja">コンサルティング</option><option class="ja">まだ決まっていない</option>
+        </select>
+        <label for="c-msg"><span class="en">Message</span><span class="ja">ご相談内容</span></label><textarea id="c-msg"></textarea>
+        <button class="btn btn-accent" type="submit"><span class="en">Book a free consultation</span><span class="ja">無料相談を予約</span></button>
+        <div class="done" role="status"><span class="en">Consultation request received. This is a design preview: on the live site this form will send to HubSpot.</span><span class="ja">無料相談のご予約を受け付けました。こちらはデザインのプレビューです。公開版ではこのフォームがHubSpotに送信されます。</span></div>
+      </form>
+      </HubSpotForm>
+    </div>
+  </section>
+</div>

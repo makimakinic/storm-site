@@ -1,0 +1,41 @@
+---
+import type { Lang } from '../site';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+---
+<div class="view on" id="v-about">
+  <section style="padding-bottom:40px">
+    <div class="wrap">
+      <div class="sec-head" style="max-width:1000px">
+        <h1><span class="en">About Storm Research</span><span class="ja">ストーム・リサーチについて</span></h1>
+        <p class="lead"><span class="en">Storm Research Ltd is a UK-based, FCA-regulated specialist in Japanese equities, founded in 2009. We run two businesses: Storm Research, which provides independent research on Japanese small and mid caps to institutional investors, and Storm Corporate, which supports Japanese listed companies with overseas investor relations.</span><span class="ja">Storm Research Ltd（ストーム・リサーチ）は、2009年に英国で設立された、英国金融行為規制機構（FCA）の認可を受けた日本株の専門会社です。海外機関投資家向けに日本の中小型株の独立系リサーチを提供する「ストーム・リサーチ」と、日本の上場企業の海外IRを支援する「ストーム・コーポレート」の2つの事業を展開しています。</span></p>
+        <p><span class="en">Our team are fluent Japanese speakers with significant Japanese equity experience.</span><span class="ja">日本語が堪能で、日本株の豊富な経験を持つメンバーが揃っています。</span></p>
+      </div>
+      <div class="founders">
+        <div class="person"><img src="/assets/rhiannon.jpg" alt="Rhiannon Ewart-White"><div><h3>Rhiannon Ewart-White</h3><div class="role"><span class="en">Managing Director / Senior Analyst</span><span class="ja">代表取締役 / シニアアナリスト</span></div><p>Mizuno, Schroder Investment Management, ING Barings, Macquarie, JK Investment Management</p></div></div>
+        <div class="person"><img src="/assets/rowan.jpg" alt="Rowan Ewart-White"><div><h3>Rowan Ewart-White</h3><div class="role"><span class="en">Director / Sales</span><span class="ja">ディレクター / セールス</span></div><p>SG Warburg, Salomon Brothers, ING Barings, Macquarie, GAM</p></div></div>
+      </div>
+    </div>
+  </section>
+  <section style="padding-top:24px">
+    <div class="wrap">
+      <div class="team">
+        <div class="member"><img class="mphoto" src="/assets/rogerio.jpg" alt="Rogerio Fujimori"><h3>Rogerio Fujimori</h3><div class="role"><span class="en">Head of Research</span><span class="ja">ヘッド・オブ・リサーチ</span></div><p>Morgan Stanley, Credit Suisse, RBC Capital, Stifel</p></div>
+        <div class="member"><img class="mphoto" src="/assets/francesca.jpg" alt="Francesca Levett"><h3>Francesca Levett</h3><div class="role"><span class="en">Senior Analyst</span><span class="ja">シニアアナリスト</span></div><p>JET Programme</p></div>
+        <div class="member"><span class="mphoto mph-none" aria-hidden="true">SM</span><h3>Sho Murai</h3><div class="role"><span class="en">Senior Analyst</span><span class="ja">シニアアナリスト</span></div><p>Nippon Life AM, Nissay AM, Manulife IM, Mizuho AM</p></div>
+                                                      </div>
+    </div>
+  </section>
+  <section class="tint">
+    <div class="wrap">
+      <h2><span class="en">How we got here</span><span class="ja">これまでの歩み</span></h2>
+      <ul class="slist" style="margin-top:24px">
+        <li><b>2009</b><span><span class="en">Storm Research founded to generate unique ideas in Japan</span><span class="ja">日本で独自のアイデアを生み出すためにストーム・リサーチを設立</span></span></li>
+        <li><b>2018</b><span><span class="en">Adapted our model for MiFID II unbundling</span><span class="ja">MiFID IIのアンバンドリングに合わせてビジネスモデルを戦略的に転換</span></span></li>
+        <li><b>2019</b><span><span class="en">Launched Storm Corporate for Japanese listed companies</span><span class="ja">日本の上場企業向けにストーム・コーポレートを開始</span></span></li>
+        <li><b>2025</b><span><span class="en">Strengthened research with a new senior analyst hire</span><span class="ja">シニアアナリストの採用でリサーチ体制を強化</span></span></li>
+        <li><b>2026</b><span><span class="en">Head of Research joins; Storm Corporate passes 50 corporate clients</span><span class="ja">ヘッド・オブ・リサーチが加入、ストーム・コーポレートの企業クライアントが50社を突破</span></span></li>
+      </ul>
+    </div>
+  </section>
+</div>
