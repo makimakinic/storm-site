@@ -59,7 +59,7 @@
   "code": "4819",
   "name_en": "Digital Garage",
   "name_ja": "デジタルガレージ",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/4819.png",
   "logo_display_px": {
    "w": 205,
@@ -70,7 +70,7 @@
   "code": "2730",
   "name_en": "EDION",
   "name_ja": "エディオン",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/2730.png",
   "logo_display_px": {
    "w": 143,
