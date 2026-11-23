@@ -81,7 +81,7 @@
   "code": "5246",
   "name_en": "ELEMENTS",
   "name_ja": "ELEMENTS",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/5246.png",
   "logo_display_px": {
    "w": 190,
@@ -92,7 +92,7 @@
   "code": "2931",
   "name_en": "Euglena",
   "name_ja": "ユーグレナ",
-  "report_page": false,
+  "report_page": true,
   "logo": {
    "en": "logos/2931-en.png",
    "ja": "logos/2931-ja.png"
@@ -123,7 +123,7 @@
   "code": "4662",
   "name_en": "Focus Systems",
   "name_ja": "フォーカスシステムズ",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/4662.png",
   "logo_display_px": {
    "w": 205,
@@ -245,7 +245,7 @@
   "code": "8016",
   "name_en": "Onward Holdings",
   "name_ja": "オンワードホールディングス",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/8016.png",
   "logo_display_px": {
    "w": 205,
@@ -256,7 +256,7 @@
   "code": "2154",
   "name_en": "Open Up Group",
   "name_ja": "オープンアップグループ",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/2154.png",
   "logo_display_px": {
    "w": 157,
