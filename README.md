@@ -32,9 +32,20 @@ Astro で作った静的サイトです。GitHub に保存すると Vercel が�
 
 - `indexable`：検索エンジンに載せるか。プレビュー中は `false`。公開のときに `true` にする
 - `reportsSite`：レポートサイトのURL
+- `reviewComments`：プレビュー用コメント機能を出すか
 - `hubspot.trackingCode`／`hubspot.forms`：HubSpotの埋め込みコードを貼る場所。
   フォームが空のあいだは試作と同じ見本のフォームが表示されます（送信はされません）。
   `indexable` を `true` にしたときに未設定のものがあると、ビルドが止まって知らせます。
+
+## プレビュー用コメント機能
+
+プレビューサイトの右下に「コメント」ボタンが出ます。チームの方がページ上の場所を選んでコメントを残せます。
+
+- 使い方：「コメント」→ 名前と合言葉（初回だけ）→ コメントしたい場所をクリック → 書いて「送信」。「一覧」で全ページのコメントを見られ、対応が済んだら「解決」
+- 保存先：GitHub の `storm-site` の Issues（`api/comments.js` が保存・読み出しをする）
+- Vercel の Environment Variables に `REVIEW_GITHUB_TOKEN`（Issuesだけ読み書きできるGitHubの鍵）と `REVIEW_PASSWORD`（合言葉）が必要
+- `src/site.ts` の `indexable` を `true` にすると表示されなくなる。本番公開のときは Vercel の2つの値も削除する
+- 手元で試す：`npm run build` のあと `npm run review:local` → http://localhost:4400 （合言葉 `test`。GitHubには保存されない）
 
 ## 手元で動かす
 
@@ -64,6 +75,7 @@ src/components/  ヘッダー、フッター、企業カード、地図、HubSpo
 src/layouts/     全ページ共通の <head>、言語の切り分け、ページの動き（JS）
 src/lib/         ページ一覧、言語の切り分け処理、構造化データ
 src/site.ts      サイトの設定
+api/             コメント機能のサーバー側（Vercel Functions）
 prototype/       claude.ai で作った試作（見比べ用に残している）
 tools/           確認ツール
 ```

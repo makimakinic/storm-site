@@ -14,6 +14,10 @@ export const SITE = {
   // research.stormresearch.co.uk が使えるようになったら書き換える。
   reportsSite: 'https://storm-research-site.vercel.app',
 
+  // プレビュー用のコメント機能（右下の「コメント」ボタン）。
+  // indexable が true のときは、ここに関係なく表示されない。
+  reviewComments: true,
+
   hubspot: {
     // HubSpotの「トラッキングコード」をそのまま貼る（Cookie同意バナーもこれで表示されます）。
     // HubSpot → 設定 → トラッキングとアナリティクス → トラッキングコード

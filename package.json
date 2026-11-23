@@ -11,7 +11,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "check:layout": "node tools/check-layout.mjs",
-    "compare": "node tools/compare-prototype.mjs"
+    "compare": "node tools/compare-prototype.mjs",
+    "review:local": "node tools/review-local.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.7.4",

@@ -4,6 +4,7 @@ import '../styles/global.css';
 import { SITE, type Lang } from '../site';
 import { localize } from '../lib/localize';
 import { ORGANIZATION } from '../lib/structured-data';
+import ReviewComments from '../components/ReviewComments.astro';
 
 interface Props {
   lang: Lang;
@@ -75,6 +76,7 @@ if (faq.length) {
 <body class={bodyClass}>
 <Fragment set:html={html} />
 <Fragment set:html={SITE.hubspot.trackingCode} />
+{!SITE.indexable && SITE.reviewComments && <ReviewComments />}
 <script>
   // メニュー（スマホ）
   const nav = document.getElementById('nav');
