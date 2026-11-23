@@ -234,7 +234,7 @@
   "code": "4377",
   "name_en": "ONE CAREER",
   "name_ja": "ワンキャリア",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/4377.png",
   "logo_display_px": {
    "w": 205,
@@ -267,7 +267,7 @@
   "code": "4165",
   "name_en": "PLAID",
   "name_ja": "プレイド",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/4165.png",
   "logo_display_px": {
    "w": 183,
@@ -362,7 +362,7 @@
   "code": "7593",
   "name_en": "VT Holdings",
   "name_ja": "VTホールディングス",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/7593.png",
   "logo_display_px": {
    "w": 205,
