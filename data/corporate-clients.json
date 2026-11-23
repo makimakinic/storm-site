@@ -3,7 +3,7 @@
   "code": "6436",
   "name_en": "Amano",
   "name_ja": "アマノ",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/6436.png",
   "logo_display_px": {
    "w": 199,
@@ -37,7 +37,7 @@
   "code": "7685",
   "name_en": "BuySell Technologies",
   "name_ja": "バイセルテクノロジーズ",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/7685.png",
   "logo_display_px": {
    "w": 129,
@@ -178,7 +178,7 @@
   "code": "9889",
   "name_en": "JBCC Holdings",
   "name_ja": "JBCCホールディングス",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/9889.png",
   "logo_display_px": {
    "w": 108,
