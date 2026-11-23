@@ -145,7 +145,7 @@
   "code": "277A",
   "name_en": "Globe-ing",
   "name_ja": "グロービング",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/277A.png",
   "logo_display_px": {
    "w": 205,
@@ -340,7 +340,7 @@
   "code": "6013",
   "name_en": "Takuma",
   "name_ja": "タクマ",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/6013.svg",
   "logo_display_px": {
    "w": 205,
