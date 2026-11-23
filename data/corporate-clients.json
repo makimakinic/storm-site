@@ -201,7 +201,7 @@
   "code": "8897",
   "name_en": "MIRARTH Holdings",
   "name_ja": "MIRARTHホールディングス",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/8897.png",
   "logo_display_px": {
    "w": 150,
