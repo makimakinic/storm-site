@@ -112,7 +112,7 @@
   "code": "4259",
   "name_en": "ExaWizards",
   "name_ja": "エクサウィザーズ",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/4259.png",
   "logo_display_px": {
    "w": 205,
@@ -134,7 +134,7 @@
   "code": "6814",
   "name_en": "Furuno Electric",
   "name_ja": "古野電気",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/6814.png",
   "logo_display_px": {
    "w": 205,
@@ -223,7 +223,7 @@
   "code": "9716",
   "name_en": "Nomura",
   "name_ja": "乃村工藝社",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/9716.png",
   "logo_display_px": {
    "w": 205,
@@ -309,7 +309,7 @@
   "code": "8739",
   "name_en": "SPARX Group",
   "name_ja": "スパークス・グループ",
-  "report_page": false,
+  "report_page": true,
   "logo": {
    "en": "logos/8739-en.png",
    "ja": "logos/8739-ja.png"
@@ -373,7 +373,7 @@
   "code": "8008",
   "name_en": "Yondoshi Holdings",
   "name_ja": "ヨンドシーホールディングス",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/8008.svg",
   "logo_display_px": {
    "w": 205,
