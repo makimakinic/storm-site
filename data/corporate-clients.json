@@ -48,7 +48,7 @@
   "code": "7912",
   "name_en": "DNP",
   "name_ja": "大日本印刷",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/7912.png",
   "logo_display_px": {
    "w": 157,
