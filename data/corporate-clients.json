@@ -189,7 +189,7 @@
   "code": "3350",
   "name_en": "Metaplanet",
   "name_ja": "メタプラネット",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/3350.png",
   "logo_display_px": {
    "w": 87,
@@ -351,7 +351,7 @@
   "code": "215A",
   "name_en": "Timee",
   "name_ja": "タイミー",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/215A.png",
   "logo_display_px": {
    "w": 190,
