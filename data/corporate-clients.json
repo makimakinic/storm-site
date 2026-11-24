@@ -14,7 +14,7 @@
   "code": "8914",
   "name_en": "Arealink",
   "name_ja": "エリアリンク",
-  "report_page": false,
+  "report_page": true,
   "logo": "logos/8914.png",
   "logo_display_px": {
    "w": 205,
