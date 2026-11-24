@@ -1,0 +1,86 @@
+---
+// カバレッジページの「最新レポート」欄。発行から1か月以内のレポートだけを新しい順に出します。
+// 一覧はレポートサイトの /latest.json から読みます。
+//  - ビルド時に読み込んで、JS無しでも読めるように書き出す
+//  - ページを開いたときにも読み直し、見ている日を基準に1か月以内だけに絞る
+//    （メインサイトを更新しなくても、新しいレポートが出て古いものが消える）
+//  - 1か月以内のレポートが1本もなければ、欄ごと隠す
+import { SITE } from '../site';
+
+type Item = { code: string; name: string; nameJa: string; title: string; type: string; date: string; path: string };
+
+const src = `${SITE.reportsSite}/latest.json`;
+let items: Item[] = [];
+try {
+  const res = await fetch(src);
+  if (res.ok) items = ((await res.json()) as { reports: Item[] }).reports;
+} catch {
+  // 読めなければ空のまま（ページを開いたときに読み直す）
+}
+const cutoff = new Date();
+cutoff.setMonth(cutoff.getMonth() - 1);
+const since = cutoff.toISOString().slice(0, 10);
+items = items.filter((r) => r.date >= since);
+
+const TYPE: Record<string, [string, string]> = {
+  initiation: ['Initiation', '新規カバレッジ'],
+  update: ['Update', 'アップデート'],
+  results: ['Results', '決算'],
+};
+const dateEn = (d: string) => new Date(d + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+const dateJa = (d: string) => { const [y, m, day] = d.split('-').map(Number); return `${y}年${m}月${day}日`; };
+---
+<div class="latestlist" id="latest-reports" data-src={src} data-base={SITE.reportsSite} hidden={items.length === 0}>
+  <h2><span class="en">Latest reports</span><span class="ja">最新レポート</span> <span class="covn"><span class="en">(past month)</span><span class="ja">（過去1か月）</span></span></h2>
+  <ul>{items.map((r) => (
+    <li><a href={SITE.reportsSite + r.path} target="_blank" rel="noopener">
+      <span class="ll-code">{r.code}</span>
+      <span class="ll-co"><span class="en">{r.name}</span><span class="ja">{r.nameJa}</span></span>
+      <span class="ll-title">{r.title}<span class="ll-type"><span class="en">{(TYPE[r.type] ?? [r.type, r.type])[0]}</span><span class="ja">{(TYPE[r.type] ?? [r.type, r.type])[1]}</span></span></span>
+      <time datetime={r.date}><span class="en">{dateEn(r.date)}</span><span class="ja">{dateJa(r.date)}</span></time>
+    </a></li>
+  ))}</ul>
+</div>
+
+<script>
+  const box = document.getElementById('latest-reports') as HTMLElement | null;
+  if (box) {
+    const TYPE: Record<string, [string, string]> = {
+      initiation: ['Initiation', '新規カバレッジ'],
+      update: ['Update', 'アップデート'],
+      results: ['Results', '決算'],
+    };
+    const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
+    const dateEn = (d: string) => new Date(d + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+    const dateJa = (d: string) => { const [y, m, day] = d.split('-').map(Number); return `${y}年${m}月${day}日`; };
+    const cutoff = new Date();
+    cutoff.setMonth(cutoff.getMonth() - 1);
+    const since = cutoff.toISOString().slice(0, 10);
+    const list = box.querySelector('ul')!;
+    const base = box.dataset.base!;
+
+    // まず書き出し済みの行から、1か月より古いものを外す
+    list.querySelectorAll('li').forEach((li) => {
+      if ((li.querySelector('time')?.getAttribute('datetime') ?? '') < since) li.remove();
+    });
+    box.hidden = list.children.length === 0;
+
+    // 最新の一覧を読み直す
+    fetch(box.dataset.src!, { cache: 'no-cache' })
+      .then((r) => (r.ok ? r.json() : Promise.reject()))
+      .then((data: { reports: { code: string; name: string; nameJa: string; title: string; type: string; date: string; path: string }[] }) => {
+        const items = data.reports.filter((r) => r.date >= since);
+        list.innerHTML = items.map((r) => {
+          const t = TYPE[r.type] ?? [r.type, r.type];
+          return `<li><a href="${esc(base + r.path)}" target="_blank" rel="noopener">`
+            + `<span class="ll-code">${esc(r.code)}</span>`
+            + `<span class="ll-co"><span class="en">${esc(r.name)}</span><span class="ja">${esc(r.nameJa)}</span></span>`
+            + `<span class="ll-title">${esc(r.title)}<span class="ll-type"><span class="en">${t[0]}</span><span class="ja">${t[1]}</span></span></span>`
+            + `<time datetime="${r.date}"><span class="en">${dateEn(r.date)}</span><span class="ja">${dateJa(r.date)}</span></time>`
+            + `</a></li>`;
+        }).join('');
+        box.hidden = items.length === 0;
+      })
+      .catch(() => {});
+  }
+</script>
